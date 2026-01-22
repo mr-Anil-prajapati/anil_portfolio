@@ -1,93 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
   <title>Anil Kumar | Industrial Automation Engineer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Anil Kumar — Service & Application Engineer with 4+ years experience in PLC, SCADA, Drives, CNC and Industrial Automation. Commissioning, troubleshooting and plant support." />
+
+  <!-- Open Graph / Social preview -->
+  <meta property="og:title" content="Anil Kumar — Industrial Automation Engineer" />
+  <meta property="og:description" content="Service & Application Engineer | PLC, SCADA, Drives, CNC. Book consultations for commissioning, troubleshooting, and training." />
+  <meta property="og:type" content="website" />
+  <!-- Replace with an actual image URL if available -->
+  <meta property="og:image" content="/assets/og-image.png" />
+  <meta property="og:url" content="https://your-site.example.com" />
+
+  <!-- Fallback favicon (replace with your favicon path) -->
+  <link rel="icon" href="/favicon.ico" />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-  <div class="logo">Anil Automation</div>
-  <ul>
-    <li><a href="#profile">Profile</a></li>
-    <li><a href="#products">Products</a></li>
-    <li><a href="#meeting">Schedule</a></li>
-    <li><a href="#contact">Contact</a></li>
-  </ul>
-</nav>
+  <header class="site-header" role="banner">
+    <nav class="navbar" role="navigation" aria-label="Primary navigation">
+      <div class="logo">Anil Automation</div>
 
-<!-- PROFILE -->
-<section id="profile" class="section hero">
-  <h1>Anil Kumar</h1>
-  <p class="subtitle">
-    Service & Application Engineer | Industrial Automation | Siemens
-  </p>
-  <p class="desc">
-    4+ years of experience in PLC, SCADA, Drives, CNC and Industrial Automation.
-    Specialized in commissioning, troubleshooting and plant support.
-  </p>
-</section>
+      <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation">
+        ☰
+      </button>
 
-<!-- PRODUCTS -->
-<section id="products" class="section light">
-  <h2>Engineering Tools & Products</h2>
+      <ul id="primary-menu" class="nav-list">
+        <li><a href="#profile">Profile</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#meeting">Schedule</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  <div class="product-grid">
-    <div class="product-card">
-      <h3>Digital Multimeter</h3>
-      <p>Essential tool for commissioning & troubleshooting</p>
-      <a href="#" target="_blank" class="btn">Buy on Amazon</a>
-    </div>
+  <main id="main" class="site-main" role="main">
+    <!-- PROFILE / HERO -->
+    <section id="profile" class="section hero" aria-labelledby="profile-heading">
+      <div class="hero-inner">
+        <h1 id="profile-heading">Anil Kumar</h1>
+        <p class="subtitle">
+          Service & Application Engineer | Industrial Automation | Siemens
+        </p>
+        <p class="desc">
+          4+ years of experience in PLC, SCADA, Drives, CNC and Industrial Automation.
+          Specialized in commissioning, troubleshooting and plant support.
+        </p>
 
-    <div class="product-card">
-      <h3>PLC Programming Cable</h3>
-      <p>Reliable cable for Siemens PLC communication</p>
-      <a href="#" target="_blank" class="btn">Buy on Amazon</a>
-    </div>
-  </div>
-</section>
+        <div class="hero-actions">
+          <a class="btn primary" href="#meeting">Schedule a meeting</a>
+          <a class="btn" href="#contact">Contact</a>
+        </div>
+      </div>
+    </section>
 
-<!-- SCHEDULE MEETING -->
-<section id="meeting" class="section">
-  <h2>Schedule a Meeting / Call</h2>
-  <p>
-    Book a consultation for commissioning, troubleshooting, or training.
-  </p>
+    <!-- PRODUCTS -->
+    <section id="products" class="section light" aria-labelledby="products-heading">
+      <h2 id="products-heading">Engineering Tools & Products</h2>
 
-  <a href="https://calendly.com" target="_blank" class="btn big">
-    Schedule Meeting
-  </a>
+      <div class="product-grid" role="list">
+        <div class="product-card" role="listitem">
+          <img src="/assets/dmm.jpg" alt="Digital Multimeter" class="product-image" />
+          <h3>Digital Multimeter</h3>
+          <p>Essential tool for commissioning & troubleshooting</p>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Buy Digital Multimeter on Amazon">Buy on Amazon</a>
+        </div>
 
-  <p class="note">Google Meet / Phone call supported</p>
-</section>
+        <div class="product-card" role="listitem">
+          <img src="/assets/plc-cable.jpg" alt="PLC Programming Cable" class="product-image" />
+          <h3>PLC Programming Cable</h3>
+          <p>Reliable cable for Siemens PLC communication</p>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Buy PLC Programming Cable on Amazon">Buy on Amazon</a>
+        </div>
+      </div>
+    </section>
 
-<!-- CONTACT -->
-<section id="contact" class="section light">
-  <h2>Contact Us</h2>
+    <!-- SCHEDULE MEETING -->
+    <section id="meeting" class="section" aria-labelledby="meeting-heading">
+      <h2 id="meeting-heading">Schedule a Meeting / Call</h2>
+      <p>Book a consultation for commissioning, troubleshooting, or training.</p>
 
-  <div class="contact-box">
-    <p>📍 Dhanbad, Jharkhand, India</p>
-    <p>📞 <a href="tel:9122407756">9122407756</a></p>
-    <p>📧 <a href="mailto:anil02573@gmail.com">anil02573@gmail.com</a></p>
-    <p>
-      🔗 <a href="https://www.linkedin.com/in/anil02573" target="_blank">
-        LinkedIn Profile
+      <a href="https://calendly.com" target="_blank" rel="noopener noreferrer" class="btn big" aria-label="Schedule a meeting on Calendly">
+        Schedule Meeting
       </a>
-    </p>
-  </div>
-</section>
 
-<!-- FOOTER -->
-<footer>
-  © 2026 Anil Kumar • Industrial Automation Services
-</footer>
+      <p class="note">Google Meet / Phone call supported</p>
+    </section>
 
-<script src="js/main.js"></script>
+    <!-- CONTACT -->
+    <section id="contact" class="section light" aria-labelledby="contact-heading">
+      <h2 id="contact-heading">Contact</h2>
+
+      <div class="contact-grid">
+        <div class="contact-box">
+          <p>📍 Dhanbad, Jharkhand, India</p>
+          <!-- Use international format +91 for India -->
+          <p>📞 <a href="tel:+919122407756">+91 91224 07756</a></p>
+          <p>📧 <a href="mailto:anil02573@gmail.com">anil02573@gmail.com</a></p>
+          <p>🔗 <a href="https://www.linkedin.com/in/anil02573" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+        </div>
+
+        <div class="contact-form-box" aria-hidden="false">
+          <!-- Lightweight contact form that opens user's mail client.
+               If you prefer server handling or a proper backend, I can add an API endpoint or Netlify/Formspree integration. -->
+          <form id="contact-form" action="mailto:anil02573@gmail.com" method="post" enctype="text/plain" onsubmit="return prepareMail(event)">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit" class="btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <div class="footer-inner">
+      <p>© 2026 Anil Kumar • Industrial Automation Services</p>
+    </div>
+  </footer>
+
+  <!-- Structured data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Anil Kumar",
+    "jobTitle": "Service & Application Engineer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Anil Automation"
+    },
+    "location": "Dhanbad, Jharkhand, India",
+    "email": "mailto:anil02573@gmail.com",
+    "sameAs": [
+      "https://www.linkedin.com/in/anil02573"
+    ]
+  }
+  </script>
+
+  <script>
+    // Small helper: toggle mobile nav (requires minimal CSS to hide/show .nav-list when nav-toggle toggled)
+    document.addEventListener('DOMContentLoaded', function () {
+      var toggle = document.querySelector('.nav-toggle');
+      var menu = document.getElementById('primary-menu');
+      if (toggle && menu) {
+        toggle.addEventListener('click', function () {
+          var expanded = this.getAttribute('aria-expanded') === 'true';
+          this.setAttribute('aria-expanded', String(!expanded));
+          menu.classList.toggle('open');
+        });
+      }
+    });
+
+    // Prepare mailto body from form (simple fallback)
+    function prepareMail(e) {
+      e.preventDefault();
+      var name = document.getElementById('name').value.trim();
+      var email = document.getElementById('email').value.trim();
+      var message = document.getElementById('message').value.trim();
+      var subject = encodeURIComponent('Website inquiry from ' + name);
+      var body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
+      window.location.href = 'mailto:anil02573@gmail.com?subject=' + subject + '&body=' + body;
+      return false;
+    }
+  </script>
+
+  <script src="js/main.js"></script>
 </body>
 </html>
