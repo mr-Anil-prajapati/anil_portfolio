@@ -1,141 +1,200 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <title>Anil Kumar | Industrial Automation Engineer</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <meta name="description" content="Anil Kumar — Service & Application Engineer with 4+ years experience in PLC, SCADA, Drives, CNC and Industrial Automation. Commissioning, troubleshooting and plant support." />
+  <title>Anil Kumar — Industrial Automation Engineer</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <meta name="description" content="Anil Kumar — Service & Application Engineer. PLC, SCADA, Drives, SINUMERIK CNC. Commissioning, troubleshooting and plant support." />
 
   <link rel="icon" href="/favicon.ico" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
   <a class="skip-link" href="#main">Skip to main content</a>
 
-  <header class="site-header" role="banner">
-    <nav class="navbar container" role="navigation" aria-label="Primary navigation">
-      <div class="brand">
-        <a href="/" class="logo">Anil Automation</a>
-      </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">Anil Automation</a>
 
-      <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="hamburger" aria-hidden="true"></span>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Open menu">
+        <span class="hamburger"></span>
       </button>
 
-      <ul id="primary-menu" class="nav-list" role="menu">
-        <li role="none"><a role="menuitem" href="#profile">Profile</a></li>
-        <li role="none"><a role="menuitem" href="#products">Products</a></li>
-        <li role="none"><a role="menuitem" href="#meeting">Schedule</a></li>
-        <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
-      </ul>
-    </nav>
+      <nav id="primary-menu" class="nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <main id="main" class="site-main">
-    <!-- PROFILE / HERO -->
-    <section id="profile" class="section hero container" aria-labelledby="profile-heading">
-      <div class="hero-inner hero-profile">
-        <div class="hero-left">
-          <img src="images/gallery/plceholder.png" alt="Anil Kumar — profile photo" class="profile-photo" />
-        </div>
+  <main id="main">
+    <!-- HERO / PROFILE -->
+    <section id="profile" class="hero-outer">
+      <div class="hero-inner container">
+        <aside class="hero-photo">
+          <img src="images/gallery/plceholder.png" alt="Anil Kumar — profile photo" class="photo" />
+        </aside>
 
-        <div class="hero-right">
-          <h1 id="profile-heading">Anil Kumar</h1>
-          <p class="subtitle">Service & Application Engineer | Industrial Automation | Siemens</p>
+        <div class="hero-content">
+          <h1>Anil Kumar</h1>
+          <p class="role">Service & Application Engineer — Industrial Automation (Siemens)</p>
 
-          <p class="desc"><em>Dynamic Industrial Automation Engineer — "Bridging Artistry and Engineering Precision"</em></p>
-
-          <p>
-            With over 4 years of experience, I specialize in designing large-scale system architectures and implementing industrial automation solutions — including DCS, PLC, SCADA/HMI, IoT, Industrial EDGE, and custom software. I create Industry 4.0 solutions that transform and optimize operations across Pharma, Food & Beverage, and Steel industries.
+          <p class="lead">
+            Dynamic Industrial Automation Engineer with 4+ years of experience designing and commissioning PLC, SCADA/HMI, SINAMICS drives and SINUMERIK CNC systems across Pharma, Food & Beverage, and Steel. Passionate about Industry 4.0, Edge & Cloud integration, and AI-assisted automation.
           </p>
 
-          <p>
-            I collaborate with diverse teams to develop strategic plans, manage risks, and implement customer-centric solutions. Experienced in IT‑OT integration, conducting workshops, and analyzing customer needs, I ensure every project adds measurable value.
-          </p>
-
-          <div class="hero-actions">
-            <a class="btn primary" href="#meeting">Schedule a meeting</a>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#meeting">Schedule a Meeting</a>
             <a class="btn" href="#contact">Contact</a>
-            <a class="btn" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" download aria-label="Download CV">Download CV</a>
+            <a class="btn btn-outline" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" download>Download CV</a>
           </div>
 
-          <div class="profile-meta">
-            <strong>Top Skills:</strong>
-            <span class="muted">RPA · SCADA · Automation · PLCs · SINAMICS · SINUMERIK</span>
-          </div>
+          <ul class="meta-list">
+            <li><strong>Location:</strong> Dhanbad, Jharkhand</li>
+            <li><strong>Email:</strong> <a href="mailto:anil02573@gmail.com">anil02573@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+919122407756">+91 91224 07756</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anil02573" target="_blank" rel="noopener noreferrer">anil02573</a></li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- PRODUCTS -->
-    <section id="products" class="section light container" aria-labelledby="products-heading">
-      <h2 id="products-heading">Engineering Tools & Products</h2>
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <h2>Top Skills</h2>
+      <div class="chips">
+        <span>PLC Programming</span>
+        <span>SCADA / HMI</span>
+        <span>Drives (SINAMICS)</span>
+        <span>SINUMERIK CNC</span>
+        <span>Robotic Process Automation (RPA)</span>
+        <span>IT‑OT Integration</span>
+      </div>
 
-      <div class="product-grid" role="list">
-        <article class="product-card" role="listitem">
-          <img src="/assets/dmm.jpg" alt="Digital Multimeter" class="product-image" />
-          <h3>Digital Multimeter</h3>
-          <p class="muted">Essential tool for commissioning & troubleshooting</p>
-          <a href="#" target="_blank" rel="noopener noreferrer" class="btn">Buy on Amazon</a>
+      <div class="two-col">
+        <div>
+          <h3>Languages</h3>
+          <ul>
+            <li>Hindi — Professional working</li>
+            <li>English — Professional working</li>
+            <li>German — Elementary</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Certifications</h3>
+          <ul>
+            <li>SINAMICS S120 Basic & Advance</li>
+            <li>WinCC Unified Essentials</li>
+            <li>SINUMERIK 828D Commissioning & Maintenance</li>
+            <li>Robotic Process Automation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section light container">
+      <h2>Experience</h2>
+
+      <div class="timeline">
+        <article class="timeline-item">
+          <header>
+            <h3>Maple Auto Motion Pvt LTD — Service Engineer</h3>
+            <time>Feb 2024 — Present</time>
+            <p class="muted">Bokaro Steel City</p>
+          </header>
+          <p>Commissioning and support for Siemens automation at Bokaro Steel (SAIL). Responsibilities include PLC/HMI upgrades, VFD commissioning (S120/G120), and drives commissioning for heavy cranes (450-ton).</p>
         </article>
 
-        <article class="product-card" role="listitem">
-          <img src="/assets/plc-cable.jpg" alt="PLC Programming Cable" class="product-image" />
-          <h3>PLC Programming Cable</h3>
-          <p class="muted">Reliable cable for Siemens PLC communication</p>
-          <a href="#" target="_blank" rel="noopener noreferrer" class="btn">Buy on Amazon</a>
+        <article class="timeline-item">
+          <header>
+            <h3>Arka Automation — Service & Application Engineer</h3>
+            <time>Feb 2022 — Feb 2024</time>
+            <p class="muted">Vadodara, Gujarat</p>
+          </header>
+          <p>On-site troubleshooting and programming for major clients (Ceat, Sun Pharma, Biocon). Worked with S7-1500/1200, WinCC, Beckhoff IPCs, and various drives. Designed PLC programs and commissioned packaging & SPM machines.</p>
+        </article>
+
+        <article class="timeline-item">
+          <header>
+            <h3>ZF Group — Maintenance Technician</h3>
+            <time>Feb 2021 — Feb 2022</time>
+            <p class="muted">Jamshedpur</p>
+          </header>
+          <p>Preventive maintenance for CNC and assembly machines, breakdown response, PLC basics, and utility/power management.</p>
         </article>
       </div>
     </section>
 
-    <!-- SCHEDULE MEETING -->
-    <section id="meeting" class="section container" aria-labelledby="meeting-heading">
-      <h2 id="meeting-heading">Schedule a Meeting / Call</h2>
+    <!-- PROJECTS / PRODUCTS -->
+    <section id="projects" class="section container">
+      <h2>Tools & Products</h2>
+      <div class="grid-cards">
+        <article class="card">
+          <img src="/assets/dmm.jpg" alt="Digital Multimeter" />
+          <h4>Digital Multimeter</h4>
+          <p class="muted">Essential for commissioning & troubleshooting</p>
+          <a class="btn" href="#" target="_blank" rel="noopener noreferrer">Buy</a>
+        </article>
+
+        <article class="card">
+          <img src="/assets/plc-cable.jpg" alt="PLC cable" />
+          <h4>PLC Programming Cable</h4>
+          <p class="muted">Reliable Siemens programming cable</p>
+          <a class="btn" href="#" target="_blank" rel="noopener noreferrer">Buy</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section id="meeting" class="section light container">
+      <h2>Schedule a Meeting</h2>
       <p>Book a consultation for commissioning, troubleshooting, or training.</p>
-
-      <a href="https://calendly.com" target="_blank" rel="noopener noreferrer" class="btn big" aria-label="Schedule a meeting on Calendly">
-        Schedule Meeting
-      </a>
-
-      <p class="note muted">Google Meet / Phone call supported</p>
+      <a class="btn btn-primary" href="https://calendly.com" target="_blank" rel="noopener noreferrer">Schedule on Calendly</a>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section light container" aria-labelledby="contact-heading">
-      <h2 id="contact-heading">Contact</h2>
-
+    <section id="contact" class="section container contact-section">
+      <h2>Contact</h2>
       <div class="contact-grid">
-        <address class="contact-box">
-          <p>📍 Dhanbad, Jharkhand, India</p>
-          <p>📞 <a href="tel:+919122407756">+91 91224 07756</a></p>
-          <p>📧 <a href="mailto:anil02573@gmail.com">anil02573@gmail.com</a></p>
-          <p>🔗 <a href="https://www.linkedin.com/in/anil02573" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
+        <address class="contact-card">
+          <p><strong>Location:</strong> Dhanbad, Jharkhand, India</p>
+          <p><strong>Phone:</strong> <a href="tel:+919122407756">+91 91224 07756</a></p>
+          <p><strong>Email:</strong> <a href="mailto:anil02573@gmail.com">anil02573@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anil02573" target="_blank" rel="noopener noreferrer">anil02573</a></p>
+          <a class="btn btn-outline" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" download>Download CV</a>
         </address>
 
-        <div class="contact-form-box">
-          <form id="contact-form" action="#" method="post" onsubmit="return prepareMail(event)">
-            <label for="name">Name</label>
-            <input id="name" name="name" type="text" required />
+        <form class="contact-card" id="contact-form" onsubmit="return prepareMail(event)">
+          <label for="c-name">Name</label>
+          <input id="c-name" name="name" required />
 
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" required />
+          <label for="c-email">Email</label>
+          <input id="c-email" name="email" type="email" required />
 
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+          <label for="c-message">Message</label>
+          <textarea id="c-message" name="message" rows="5" required></textarea>
 
-            <div class="form-actions">
-              <button type="submit" class="btn primary">Send</button>
-              <button type="reset" class="btn ghost">Reset</button>
-            </div>
-          </form>
-        </div>
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send</button>
+            <button class="btn" type="reset">Reset</button>
+          </div>
+        </form>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <div class="container">
+    <div class="container footer-inner">
       <p>© 2026 Anil Kumar • Industrial Automation Services</p>
     </div>
   </footer>
