@@ -10,11 +10,9 @@
   <meta property="og:title" content="Anil Kumar — Industrial Automation Engineer" />
   <meta property="og:description" content="Service & Application Engineer | PLC, SCADA, Drives, CNC. Book consultations for commissioning, troubleshooting, and training." />
   <meta property="og:type" content="website" />
-  <!-- Replace with an actual image URL if available -->
   <meta property="og:image" content="/assets/og-image.png" />
   <meta property="og:url" content="https://your-site.example.com" />
 
-  <!-- Fallback favicon (replace with your favicon path) -->
   <link rel="icon" href="/favicon.ico" />
 
   <!-- CSS -->
@@ -25,30 +23,30 @@
   <a class="skip-link" href="#main">Skip to main content</a>
 
   <header class="site-header" role="banner">
-    <nav class="navbar" role="navigation" aria-label="Primary navigation">
-      <div class="logo">Anil Automation</div>
+    <nav class="navbar container" role="navigation" aria-label="Primary navigation">
+      <div class="brand">
+        <a href="/" class="logo">Anil Automation</a>
+      </div>
 
       <button class="nav-toggle" aria-controls="primary-menu" aria-expanded="false" aria-label="Toggle navigation">
-        ☰
+        <span class="hamburger" aria-hidden="true"></span>
       </button>
 
-      <ul id="primary-menu" class="nav-list">
-        <li><a href="#profile">Profile</a></li>
-        <li><a href="#products">Products</a></li>
-        <li><a href="#meeting">Schedule</a></li>
-        <li><a href="#contact">Contact</a></li>
+      <ul id="primary-menu" class="nav-list" role="menu">
+        <li role="none"><a role="menuitem" href="#profile">Profile</a></li>
+        <li role="none"><a role="menuitem" href="#products">Products</a></li>
+        <li role="none"><a role="menuitem" href="#meeting">Schedule</a></li>
+        <li role="none"><a role="menuitem" href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <main id="main" class="site-main" role="main">
+  <main id="main" class="site-main">
     <!-- PROFILE / HERO -->
-    <section id="profile" class="section hero" aria-labelledby="profile-heading">
+    <section id="profile" class="section hero container" aria-labelledby="profile-heading">
       <div class="hero-inner">
         <h1 id="profile-heading">Anil Kumar</h1>
-        <p class="subtitle">
-          Service & Application Engineer | Industrial Automation | Siemens
-        </p>
+        <p class="subtitle">Service & Application Engineer | Industrial Automation | Siemens</p>
         <p class="desc">
           4+ years of experience in PLC, SCADA, Drives, CNC and Industrial Automation.
           Specialized in commissioning, troubleshooting and plant support.
@@ -62,28 +60,28 @@
     </section>
 
     <!-- PRODUCTS -->
-    <section id="products" class="section light" aria-labelledby="products-heading">
+    <section id="products" class="section light container" aria-labelledby="products-heading">
       <h2 id="products-heading">Engineering Tools & Products</h2>
 
       <div class="product-grid" role="list">
-        <div class="product-card" role="listitem">
+        <article class="product-card" role="listitem">
           <img src="/assets/dmm.jpg" alt="Digital Multimeter" class="product-image" />
           <h3>Digital Multimeter</h3>
-          <p>Essential tool for commissioning & troubleshooting</p>
-          <a href="#" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Buy Digital Multimeter on Amazon">Buy on Amazon</a>
-        </div>
+          <p class="muted">Essential tool for commissioning & troubleshooting</p>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn">Buy on Amazon</a>
+        </article>
 
-        <div class="product-card" role="listitem">
+        <article class="product-card" role="listitem">
           <img src="/assets/plc-cable.jpg" alt="PLC Programming Cable" class="product-image" />
           <h3>PLC Programming Cable</h3>
-          <p>Reliable cable for Siemens PLC communication</p>
-          <a href="#" target="_blank" rel="noopener noreferrer" class="btn" aria-label="Buy PLC Programming Cable on Amazon">Buy on Amazon</a>
-        </div>
+          <p class="muted">Reliable cable for Siemens PLC communication</p>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="btn">Buy on Amazon</a>
+        </article>
       </div>
     </section>
 
     <!-- SCHEDULE MEETING -->
-    <section id="meeting" class="section" aria-labelledby="meeting-heading">
+    <section id="meeting" class="section container" aria-labelledby="meeting-heading">
       <h2 id="meeting-heading">Schedule a Meeting / Call</h2>
       <p>Book a consultation for commissioning, troubleshooting, or training.</p>
 
@@ -91,26 +89,23 @@
         Schedule Meeting
       </a>
 
-      <p class="note">Google Meet / Phone call supported</p>
+      <p class="note muted">Google Meet / Phone call supported</p>
     </section>
 
     <!-- CONTACT -->
-    <section id="contact" class="section light" aria-labelledby="contact-heading">
+    <section id="contact" class="section light container" aria-labelledby="contact-heading">
       <h2 id="contact-heading">Contact</h2>
 
       <div class="contact-grid">
-        <div class="contact-box">
+        <address class="contact-box">
           <p>📍 Dhanbad, Jharkhand, India</p>
-          <!-- Use international format +91 for India -->
           <p>📞 <a href="tel:+919122407756">+91 91224 07756</a></p>
           <p>📧 <a href="mailto:anil02573@gmail.com">anil02573@gmail.com</a></p>
           <p>🔗 <a href="https://www.linkedin.com/in/anil02573" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a></p>
-        </div>
+        </address>
 
-        <div class="contact-form-box" aria-hidden="false">
-          <!-- Lightweight contact form that opens user's mail client.
-               If you prefer server handling or a proper backend, I can add an API endpoint or Netlify/Formspree integration. -->
-          <form id="contact-form" action="mailto:anil02573@gmail.com" method="post" enctype="text/plain" onsubmit="return prepareMail(event)">
+        <div class="contact-form-box">
+          <form id="contact-form" action="#" method="post" onsubmit="return prepareMail(event)">
             <label for="name">Name</label>
             <input id="name" name="name" type="text" required />
 
@@ -118,17 +113,20 @@
             <input id="email" name="email" type="email" required />
 
             <label for="message">Message</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
+            <textarea id="message" name="message" rows="5" required></textarea>
 
-            <button type="submit" class="btn">Send</button>
+            <div class="form-actions">
+              <button type="submit" class="btn primary">Send</button>
+              <button type="reset" class="btn ghost">Reset</button>
+            </div>
           </form>
         </div>
       </div>
     </section>
   </main>
 
-  <footer class="site-footer" role="contentinfo">
-    <div class="footer-inner">
+  <footer class="site-footer">
+    <div class="container">
       <p>© 2026 Anil Kumar • Industrial Automation Services</p>
     </div>
   </footer>
@@ -150,33 +148,6 @@
       "https://www.linkedin.com/in/anil02573"
     ]
   }
-  </script>
-
-  <script>
-    // Small helper: toggle mobile nav (requires minimal CSS to hide/show .nav-list when nav-toggle toggled)
-    document.addEventListener('DOMContentLoaded', function () {
-      var toggle = document.querySelector('.nav-toggle');
-      var menu = document.getElementById('primary-menu');
-      if (toggle && menu) {
-        toggle.addEventListener('click', function () {
-          var expanded = this.getAttribute('aria-expanded') === 'true';
-          this.setAttribute('aria-expanded', String(!expanded));
-          menu.classList.toggle('open');
-        });
-      }
-    });
-
-    // Prepare mailto body from form (simple fallback)
-    function prepareMail(e) {
-      e.preventDefault();
-      var name = document.getElementById('name').value.trim();
-      var email = document.getElementById('email').value.trim();
-      var message = document.getElementById('message').value.trim();
-      var subject = encodeURIComponent('Website inquiry from ' + name);
-      var body = encodeURIComponent('Name: ' + name + '\nEmail: ' + email + '\n\n' + message);
-      window.location.href = 'mailto:anil02573@gmail.com?subject=' + subject + '&body=' + body;
-      return false;
-    }
   </script>
 
   <script src="js/main.js"></script>
