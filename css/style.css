@@ -1,170 +1,204 @@
-:root{
-  --bg: #f6f7fb;
-  --card: #ffffff;
-  --accent: #0b6efd;
-  --accent-600: #0956d6;
-  --muted: #6b7280;
-  --text: #0f1724;
-  --radius: 10px;
-  --shadow-sm: 0 1px 3px rgba(16,24,40,0.06);
-  --shadow-md: 0 12px 30px rgba(16,24,40,0.08);
-  --container: 1100px;
-  --gap: 1.25rem;
-  --transition: 180ms ease;
-  --font-sans: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-}
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Anil Kumar — Industrial Automation Engineer</title>
 
-/* Reset-ish */
-*,
-*::before,
-*::after{box-sizing:border-box}
-html,body{height:100%}
-body{
-  margin:0;
-  font-family:var(--font-sans);
-  color:var(--text);
-  background:var(--bg);
-  -webkit-font-smoothing:antialiased;
-  -moz-osx-font-smoothing:grayscale;
-  line-height:1.45;
-  font-size:16px;
-}
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-/* Container */
-.container{
-  width:calc(100% - 2rem);
-  max-width:var(--container);
-  margin:0 auto;
-  padding:2rem 0;
-}
+  <meta name="description" content="Anil Kumar — Service & Application Engineer. PLC, SCADA, Drives, SINUMERIK CNC. Commissioning, troubleshooting and plant support." />
 
-/* Skip link */
-.skip-link{
-  position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;
-}
-.skip-link:focus{
-  left:1rem;top:1rem;width:auto;height:auto;padding:0.5rem 0.75rem;background:#111;color:#fff;border-radius:6px;z-index:999;
-}
+  <link rel="icon" href="/favicon.ico" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
 
-/* Header */
-.site-header{
-  position:sticky;top:0;z-index:40;
-  background:rgba(255,255,255,0.8);
-  backdrop-filter:blur(6px);
-  border-bottom:1px solid rgba(15,23,36,0.04);
-}
-.navbar{
-  display:flex;align-items:center;justify-content:space-between;gap:var(--gap);padding:0.75rem 0;
-}
-.brand .logo{
-  font-weight:700;color:var(--text);text-decoration:none;font-size:1.05rem;
-}
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="/">Anil Automation</a>
 
-/* Nav list */
-.nav-list{
-  display:flex;gap:1rem;list-style:none;margin:0;padding:0;
-}
-.nav-list a{
-  display:inline-block;padding:0.45rem 0.75rem;border-radius:8px;color:var(--text);text-decoration:none;font-weight:500;
-  transition:background var(--transition),color var(--transition);
-}
-.nav-list a:hover,
-.nav-list a:focus{
-  background:rgba(11,110,253,0.08);outline:none;
-}
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Open menu">
+        <span class="hamburger"></span>
+      </button>
 
-/* Mobile nav toggle */
-.nav-toggle{
-  display:none;background:transparent;border:0;padding:0.5rem;border-radius:8px;
-}
-.nav-toggle:focus{outline:2px solid rgba(11,110,253,0.25)}
-.hamburger{
-  display:block;width:22px;height:2px;background:var(--text);position:relative;border-radius:2px;
-}
-.hamburger::before,
-.hamburger::after{
-  content:"";position:absolute;left:0;width:22px;height:2px;background:var(--text);border-radius:2px;
-}
-.hamburger::before{top:-7px}
-.hamburger::after{top:7px}
+      <nav id="primary-menu" class="nav" role="navigation" aria-label="Primary">
+        <ul>
+          <li><a href="#profile">Profile</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-/* Hero */
-.hero{
-  padding:3rem 0;
-}
-.hero-inner{max-width:820px}
-h1{font-size:2rem;margin-bottom:0.5rem}
-.subtitle{color:var(--muted);font-weight:600;margin-bottom:0.5rem}
-.desc{color:var(--muted);margin-bottom:1rem}
+  <main id="main">
+    <!-- HERO / PROFILE -->
+    <section id="profile" class="hero-outer">
+      <div class="hero-inner container">
+        <aside class="hero-photo">
+          <img src="images/gallery/plceholder.png" alt="Anil Kumar — profile photo" class="photo" />
+        </aside>
 
-/* Buttons */
-.btn{
-  display:inline-block;padding:0.6rem 1rem;border-radius:8px;border:0;background:transparent;color:var(--text);cursor:pointer;text-decoration:none;font-weight:600;
-  transition:transform var(--transition),box-shadow var(--transition),background var(--transition);
-}
-.btn:hover{transform:translateY(-2px)}
-.btn.primary{background:var(--accent);color:#fff;box-shadow:var(--shadow-sm)}
-.btn.primary:hover{background:var(--accent-600)}
-.btn.big{padding:0.9rem 1.25rem;border-radius:12px}
+        <div class="hero-content">
+          <h1>Anil Kumar</h1>
+          <p class="role">Service & Application Engineer — Industrial Automation (Siemens)</p>
 
-/* Sections */
-.section{padding:2rem 0}
-.section.light{background:linear-gradient(180deg,rgba(255,255,255,0.6),transparent);border-top:1px solid rgba(15,23,36,0.02)}
+          <p class="lead">
+            Dynamic Industrial Automation Engineer with 4+ years of experience designing and commissioning PLC, SCADA/HMI, SINAMICS drives and SINUMERIK CNC systems across Pharma, Food & Beverage, and Steel. Passionate about Industry 4.0, Edge & Cloud integration, and AI-assisted automation.
+          </p>
 
-/* Product grid */
-.product-grid{
-  display:grid;
-  grid-template-columns:repeat(1,1fr);
-  gap:1rem;
-  margin-top:1rem;
-}
-.product-card{
-  background:var(--card);padding:1rem;border-radius:12px;box-shadow:var(--shadow-sm);display:flex;flex-direction:column;gap:0.5rem;
-}
-.product-image{width:100%;height:160px;object-fit:cover;border-radius:8px}
-.product-card h3{margin:0}
-.muted{color:var(--muted)}
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="#meeting">Schedule a Meeting</a>
+            <a class="btn" href="#contact">Contact</a>
+            <a class="btn btn-outline" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" download>Download CV</a>
+          </div>
 
-/* Contact grid */
-.contact-grid{
-  display:grid;
-  grid-template-columns:1fr;
-  gap:1rem;margin-top:1rem;
-}
-.contact-box{background:var(--card);padding:1rem;border-radius:12px;box-shadow:var(--shadow-sm)}
-.contact-form-box{background:var(--card);padding:1rem;border-radius:12px;box-shadow:var(--shadow-sm)}
-label{display:block;font-weight:600;margin-top:0.5rem}
-input[type="text"],
-input[type="email"],
-textarea{
-  width:100%;padding:0.6rem;border-radius:8px;border:1px solid rgba(15,23,36,0.08);margin-top:0.35rem;font-size:0.95rem;
-}
-input:focus,textarea:focus{outline:2px solid rgba(11,110,253,0.12);border-color:rgba(11,110,253,0.2)}
+          <ul class="meta-list">
+            <li><strong>Location:</strong> Dhanbad, Jharkhand</li>
+            <li><strong>Email:</strong> <a href="mailto:anil02573@gmail.com">anil02573@gmail.com</a></li>
+            <li><strong>Phone:</strong> <a href="tel:+919122407756">+91 91224 07756</a></li>
+            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anil02573" target="_blank" rel="noopener noreferrer">anil02573</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-/* Form actions */
-.form-actions{display:flex;gap:0.5rem;margin-top:0.75rem}
-.btn.ghost{background:transparent;border:1px solid rgba(15,23,36,0.06)}
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <h2>Top Skills</h2>
+      <div class="chips">
+        <span>PLC Programming</span>
+        <span>SCADA / HMI</span>
+        <span>Drives (SINAMICS)</span>
+        <span>SINUMERIK CNC</span>
+        <span>Robotic Process Automation (RPA)</span>
+        <span>IT‑OT Integration</span>
+      </div>
 
-/* Footer */
-.site-footer{padding:1.5rem 0;background:transparent;border-top:1px solid rgba(15,23,36,0.02);color:var(--muted)}
-.site-footer p{margin:0;text-align:center}
+      <div class="two-col">
+        <div>
+          <h3>Languages</h3>
+          <ul>
+            <li>Hindi — Professional working</li>
+            <li>English — Professional working</li>
+            <li>German — Elementary</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Certifications</h3>
+          <ul>
+            <li>SINAMICS S120 Basic & Advance</li>
+            <li>WinCC Unified Essentials</li>
+            <li>SINUMERIK 828D Commissioning & Maintenance</li>
+            <li>Robotic Process Automation</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-/* Accessibility focus */
-a:focus,button:focus{outline:3px solid rgba(11,110,253,0.14);outline-offset:2px}
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section light container">
+      <h2>Experience</h2>
 
-/* Responsive */
-@media (min-width:720px){
-  h1{font-size:2.25rem}
-  .product-grid{grid-template-columns:repeat(2,1fr)}
-  .contact-grid{grid-template-columns:1fr 1fr}
-}
+      <div class="timeline">
+        <article class="timeline-item">
+          <header>
+            <h3>Maple Auto Motion Pvt LTD — Service Engineer</h3>
+            <time>Feb 2024 — Present</time>
+            <p class="muted">Bokaro Steel City</p>
+          </header>
+          <p>Commissioning and support for Siemens automation at Bokaro Steel (SAIL). Responsibilities include PLC/HMI upgrades, VFD commissioning (S120/G120), and drives commissioning for heavy cranes (450-ton).</p>
+        </article>
 
-@media (max-width:719px){
-  .nav-list{position:fixed;inset:0 0 auto 0;height:100vh;top:0;left:0;right:0;display:flex;flex-direction:column;gap:0;padding:3.5rem 1.25rem;background:linear-gradient(180deg,rgba(255,255,255,0.98),#fff);transform:translateY(-100%);transition:transform var(--transition);box-shadow:var(--shadow-md)}
-  .nav-list.open{transform:translateY(0)}
-  .nav-list a{padding:0.85rem 0;border-radius:6px}
-  .nav-toggle{display:block}
-  .navbar{align-items:center}
-  .container{padding:1rem 1rem}
-  .product-image{height:140px}
-}
+        <article class="timeline-item">
+          <header>
+            <h3>Arka Automation — Service & Application Engineer</h3>
+            <time>Feb 2022 — Feb 2024</time>
+            <p class="muted">Vadodara, Gujarat</p>
+          </header>
+          <p>On-site troubleshooting and programming for major clients (Ceat, Sun Pharma, Biocon). Worked with S7-1500/1200, WinCC, Beckhoff IPCs, and various drives. Designed PLC programs and commissioned packaging & SPM machines.</p>
+        </article>
+
+        <article class="timeline-item">
+          <header>
+            <h3>ZF Group — Maintenance Technician</h3>
+            <time>Feb 2021 — Feb 2022</time>
+            <p class="muted">Jamshedpur</p>
+          </header>
+          <p>Preventive maintenance for CNC and assembly machines, breakdown response, PLC basics, and utility/power management.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PROJECTS / PRODUCTS -->
+    <section id="projects" class="section container">
+      <h2>Tools & Products</h2>
+      <div class="grid-cards">
+        <article class="card">
+          <img src="/assets/dmm.jpg" alt="Digital Multimeter" />
+          <h4>Digital Multimeter</h4>
+          <p class="muted">Essential for commissioning & troubleshooting</p>
+          <a class="btn" href="#" target="_blank" rel="noopener noreferrer">Buy</a>
+        </article>
+
+        <article class="card">
+          <img src="/assets/plc-cable.jpg" alt="PLC cable" />
+          <h4>PLC Programming Cable</h4>
+          <p class="muted">Reliable Siemens programming cable</p>
+          <a class="btn" href="#" target="_blank" rel="noopener noreferrer">Buy</a>
+        </article>
+      </div>
+    </section>
+
+    <!-- SCHEDULE -->
+    <section id="meeting" class="section light container">
+      <h2>Schedule a Meeting</h2>
+      <p>Book a consultation for commissioning, troubleshooting, or training.</p>
+      <a class="btn btn-primary" href="https://calendly.com" target="_blank" rel="noopener noreferrer">Schedule on Calendly</a>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container contact-section">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <address class="contact-card">
+          <p><strong>Location:</strong> Dhanbad, Jharkhand, India</p>
+          <p><strong>Phone:</strong> <a href="tel:+919122407756">+91 91224 07756</a></p>
+          <p><strong>Email:</strong> <a href="mailto:anil02573@gmail.com">anil02573@gmail.com</a></p>
+          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anil02573" target="_blank" rel="noopener noreferrer">anil02573</a></p>
+          <a class="btn btn-outline" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" download>Download CV</a>
+        </address>
+
+        <form class="contact-card" id="contact-form" onsubmit="return prepareMail(event)">
+          <label for="c-name">Name</label>
+          <input id="c-name" name="name" required />
+
+          <label for="c-email">Email</label>
+          <input id="c-email" name="email" type="email" required />
+
+          <label for="c-message">Message</label>
+          <textarea id="c-message" name="message" rows="5" required></textarea>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" type="submit">Send</button>
+            <button class="btn" type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>© 2026 Anil Kumar • Industrial Automation Services</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
