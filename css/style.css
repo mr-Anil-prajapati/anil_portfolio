@@ -179,11 +179,13 @@ img {
 
 .hero-photo {
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 
 .photo {
-  width: 100%;
-  aspect-ratio: 1 / 1;
+  width: min(100%, 340px);
+  height: min(calc(100vw - 40px), 340px);
   object-fit: cover;
   border-radius: 50%;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
