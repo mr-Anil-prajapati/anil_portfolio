@@ -41,3 +41,6 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        with:
+          # Deploy from the artifact we just uploaded
+          artifact_name: 'pages'
