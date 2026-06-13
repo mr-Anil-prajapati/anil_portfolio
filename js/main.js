@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
       });
     });
   }
-a
+
   /* ── Smooth scroll ── */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
