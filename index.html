@@ -4,291 +4,1023 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Anil Kumar — Industrial Automation Engineer</title>
-
-  <!-- Fonts -->
+  <meta name="description" content="Anil Kumar — Service & Application Engineer specializing in PLC, SCADA, SINAMICS Drives and SINUMERIK CNC systems." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-
-  <meta name="description" content="Anil Kumar — Service & Application Engineer. PLC, SCADA, Drives, SINUMERIK CNC. Commissioning, troubleshooting and plant support." />
-
+  <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to main content</a>
 
-  <header class="site-header">
+  <!-- NAV -->
+  <header class="site-header" id="top">
     <div class="container header-inner">
-      <a class="brand" href="index.html">Anil kumar portfolio</a>
-
+      <a class="brand" href="#top">
+        <span class="brand-bracket">[</span>AK<span class="brand-bracket">]</span>
+        <span class="brand-sub">Automation</span>
+      </a>
       <button class="nav-toggle" aria-expanded="false" aria-controls="primary-menu" aria-label="Open menu">
-        <span class="hamburger"></span>
+        <span></span><span></span><span></span>
       </button>
-
       <nav id="primary-menu" class="nav" role="navigation" aria-label="Primary">
         <ul>
-          <li><a href="#profile">Home</a></li>
+          <li><a href="#profile">Profile</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="#stats">Stats</a></li>
+          <li><a href="#certificates">Certificates</a></li>
           <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact" class="nav-cta">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main id="main">
-    <!-- HERO / PROFILE -->
-    <section id="profile" class="hero-outer">
-      <div class="hero-inner container">
-        <aside class="hero-photo">
-          <img src="images/gallery/plceholder-round.png" alt="Anil Kumar — profile photo" class="photo" />
-        </aside>
 
-        <div class="hero-content">
-          <h1>Anil Kumar</h1>
-          <p class="role">Service & Application Engineer — Industrial Automation (Siemens)</p>
+    <!-- ═══════════════════════════════════════ HERO ══ -->
+    <section id="profile" class="hero-section">
+      <div class="hero-bg">
+        <canvas id="circuit-canvas"></canvas>
+        <div class="hero-glow glow-1"></div>
+        <div class="hero-glow glow-2"></div>
+      </div>
+      <div class="container hero-inner">
+        <div class="hero-badge">
+          <span class="status-dot"></span>
+          Available for Projects
+        </div>
+        <h1 class="hero-name">Anil <span class="accent">Kumar</span></h1>
+        <p class="hero-title">
+          <span class="typewriter" id="typewriter"></span>
+        </p>
+        <p class="hero-lead">
+          Dynamic Industrial Automation Engineer with <strong>4+ years</strong> of hands-on experience
+          commissioning <strong>PLC, SCADA/HMI, SINAMICS Drives</strong> and <strong>SINUMERIK CNC</strong>
+          systems across pharma, steel, tyre, and food &amp; beverage plants.
+        </p>
+        <div class="hero-tags">
+          <span>Siemens TIA Portal</span>
+          <span>S7-1200 / S7-1500</span>
+          <span>SINAMICS S120</span>
+          <span>WinCC Unified</span>
+          <span>PROFINET</span>
+        </div>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#contact">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.21 2 2 0 012.2 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+            Get in Touch
+          </a>
+          <a class="btn btn-outline" href="assets/resume.pdf" download>
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+            Download CV
+          </a>
+        </div>
+        <div class="hero-meta">
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Dhanbad, Jharkhand
+          </span>
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <a href="mailto:anil02573@gmail.com">anil02573@gmail.com</a>
+          </span>
+          <span>
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <a href="https://www.linkedin.com/in/anil02573" target="_blank" rel="noopener">linkedin.com/in/anil02573</a>
+          </span>
+        </div>
+      </div>
+      <div class="hero-scroll-hint">
+        <div class="scroll-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
 
-          <p class="lead">
-            Dynamic Industrial Automation Engineer with 4+ years of experience commissioning PLC, SCADA/HMI,
-            SINAMICS drives and SINUMERIK CNC systems across pharma, food and beverage, tyre, and steel plants.
-          </p>
+    <!-- ════════════════════════════════════════ SKILLS ══ -->
+    <section id="skills" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Technical Stack</span>
+          <h2>Core <span class="accent">Competencies</span></h2>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-group glass-card reveal">
+            <div class="skill-group-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12.01" y2="18" stroke-width="2.5"/></svg>
+            </div>
+            <h3>PLC & Controllers</h3>
+            <ul>
+              <li>Siemens S7-1200 / S7-1500</li>
+              <li>Siemens S7-400 / S7-300</li>
+              <li>TIA Portal (LAD, FBD, SCL)</li>
+              <li>Beckhoff IPC / TwinCAT</li>
+              <li>Safety PLCs (F-CPU)</li>
+            </ul>
+          </div>
+          <div class="skill-group glass-card reveal">
+            <div class="skill-group-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3>SCADA / HMI</h3>
+            <ul>
+              <li>WinCC Unified</li>
+              <li>WinCC Professional</li>
+              <li>WinCC Basic (KTP/TP panels)</li>
+              <li>Ignition SCADA (basics)</li>
+              <li>Siemens SIMATIC S7-GRAPH</li>
+            </ul>
+          </div>
+          <div class="skill-group glass-card reveal">
+            <div class="skill-group-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <h3>Drives & Motion</h3>
+            <ul>
+              <li>SINAMICS S120 (Basic & Advance)</li>
+              <li>SINAMICS G120 / G120C</li>
+              <li>Siemens 6RA80 DC Drives</li>
+              <li>STARTER / Startdrive</li>
+              <li>Vector & V/f Control</li>
+            </ul>
+          </div>
+          <div class="skill-group glass-card reveal">
+            <div class="skill-group-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3>CNC & Robotics</h3>
+            <ul>
+              <li>SINUMERIK 828D (Commissioning)</li>
+              <li>SINUMERIK 840D sl</li>
+              <li>G-Code / ShopMill / ShopTurn</li>
+              <li>RPA – UiPath / Power Automate</li>
+              <li>Siemens SIMATIC AX</li>
+            </ul>
+          </div>
+          <div class="skill-group glass-card reveal">
+            <div class="skill-group-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+            </div>
+            <h3>Networking & Protocols</h3>
+            <ul>
+              <li>PROFINET IO</li>
+              <li>PROFIBUS DP</li>
+              <li>Modbus TCP/RTU</li>
+              <li>OPC UA / DA</li>
+              <li>Ethernet/IP</li>
+            </ul>
+          </div>
+          <div class="skill-group glass-card reveal">
+            <div class="skill-group-icon">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <h3>Software & Tools</h3>
+            <ul>
+              <li>TIA Portal V18/V19</li>
+              <li>STEP 7 Classic</li>
+              <li>EPLAN Electric P8</li>
+              <li>AutoCAD Electrical</li>
+              <li>Python / VBA</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-          <div class="hero-cta">
-            <a class="btn btn-primary" href="#contact">Contact</a>
-            <a class="btn btn-outline" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" download>Download CV</a>
+    <!-- ════════════════════════════════════════ STATS ══ -->
+    <section id="stats" class="stats-section">
+      <div class="stats-bg-line"></div>
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card reveal" data-target="15">
+            <div class="stat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <div class="stat-number"><span class="counter">0</span><span class="stat-plus">+</span></div>
+            <div class="stat-label">Projects Completed</div>
+          </div>
+          <div class="stat-card reveal" data-target="40">
+            <div class="stat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+            </div>
+            <div class="stat-number"><span class="counter">0</span><span class="stat-plus">+</span></div>
+            <div class="stat-label">Machines Commissioned</div>
+          </div>
+          <div class="stat-card reveal" data-target="25">
+            <div class="stat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+            </div>
+            <div class="stat-number"><span class="counter">0</span><span class="stat-plus">+</span></div>
+            <div class="stat-label">PLC Programs Developed</div>
+          </div>
+          <div class="stat-card reveal" data-target="8">
+            <div class="stat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="6"/><path d="M15.477 12.89L17 22l-5-3-5 3 1.523-9.11"/></svg>
+            </div>
+            <div class="stat-number"><span class="counter">0</span></div>
+            <div class="stat-label">Certificates Earned</div>
+          </div>
+          <div class="stat-card reveal" data-target="4">
+            <div class="stat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div class="stat-number"><span class="counter">0</span><span class="stat-plus">+</span></div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-card reveal" data-target="6">
+            <div class="stat-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <div class="stat-number"><span class="counter">0</span><span class="stat-plus">+</span></div>
+            <div class="stat-label">Industries Served</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════ CERTIFICATES ══ -->
+    <section id="certificates" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Verified Credentials</span>
+          <h2>Certificates &amp; <span class="accent">Training</span></h2>
+        </div>
+
+        <!-- Search + Filter -->
+        <div class="filter-bar glass-card">
+          <div class="search-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="search" id="cert-search" placeholder="Search certificates…" autocomplete="off" />
+          </div>
+          <div class="filter-chips" id="cert-filters">
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="plc">PLC Programming</button>
+            <button class="chip" data-filter="siemens">Siemens Automation</button>
+            <button class="chip" data-filter="drives">Drives &amp; Motion</button>
+            <button class="chip" data-filter="network">Industrial Networking</button>
+            <button class="chip" data-filter="ai">AI &amp; Programming</button>
+          </div>
+        </div>
+
+        <div class="cert-grid" id="cert-grid">
+
+          <!-- CERT 1 -->
+          <article class="cert-card glass-card reveal" data-category="siemens plc" data-title="SINUMERIK 828D Commissioning Maintenance">
+            <div class="cert-img-wrap">
+              <img src="images/certificates/SINUMERIK%20828D%20Commissioning%20%26%20Maintenance.jpg" alt="SINUMERIK 828D Certificate" loading="lazy" />
+              <div class="cert-overlay">
+                <a href="images/certificates/SINUMERIK%20828D%20Commissioning%20%26%20Maintenance.jpg" target="_blank" rel="noopener" class="cert-view-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  View Certificate
+                </a>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-badge siemens">Siemens</div>
+              <h3>SINUMERIK 828D</h3>
+              <p class="cert-sub">Commissioning &amp; Maintenance</p>
+              <p class="cert-date">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                2023
+              </p>
+              <div class="cert-skills">
+                <span>CNC Commissioning</span>
+                <span>Axis Configuration</span>
+                <span>Fault Diagnosis</span>
+                <span>G-Code</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CERT 2 -->
+          <article class="cert-card glass-card reveal" data-category="siemens drives" data-title="SINAMICS S120 Basic Advance">
+            <div class="cert-img-wrap">
+              <img src="images/certificates/SINAMICS%20S120%20Basic%20%26%20Advance.jpeg" alt="SINAMICS S120 Certificate" loading="lazy" />
+              <div class="cert-overlay">
+                <a href="images/certificates/SINAMICS%20S120%20Basic%20%26%20Advance.jpeg" target="_blank" rel="noopener" class="cert-view-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  View Certificate
+                </a>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-badge siemens">Siemens</div>
+              <h3>SINAMICS S120</h3>
+              <p class="cert-sub">Basic &amp; Advance Drive System</p>
+              <p class="cert-date">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                2023
+              </p>
+              <div class="cert-skills">
+                <span>Drive Parameterization</span>
+                <span>Vector Control</span>
+                <span>Servo Axis</span>
+                <span>Startdrive</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CERT 3 -->
+          <article class="cert-card glass-card reveal" data-category="siemens plc" data-title="SIMATIC S7-400 SIMATIC Manager Advance">
+            <div class="cert-img-wrap">
+              <img src="images/certificates/SIMATIC%20S7-400%20with%20SIMATIC%20Manager%20(Advance%20Course).jpeg" alt="SIMATIC S7-400 Certificate" loading="lazy" />
+              <div class="cert-overlay">
+                <a href="images/certificates/SIMATIC%20S7-400%20with%20SIMATIC%20Manager%20(Advance%20Course).jpeg" target="_blank" rel="noopener" class="cert-view-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  View Certificate
+                </a>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-badge siemens">Siemens</div>
+              <h3>SIMATIC S7-400</h3>
+              <p class="cert-sub">SIMATIC Manager — Advance Course</p>
+              <p class="cert-date">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                2022
+              </p>
+              <div class="cert-skills">
+                <span>S7-400 Hardware</span>
+                <span>STEP 7 Classic</span>
+                <span>FB / FC / OB</span>
+                <span>PROFIBUS</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CERT 4 -->
+          <article class="cert-card glass-card reveal" data-category="siemens ai" data-title="SIMATIC AX Industrial App Development">
+            <div class="cert-img-wrap cert-img-pdf">
+              <div class="cert-pdf-thumb">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+                <span>PDF Certificate</span>
+              </div>
+              <div class="cert-overlay">
+                <a href="images/certificates/simatic%20ax%20.pdf" target="_blank" rel="noopener" class="cert-view-btn">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                  View PDF
+                </a>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-badge siemens">Siemens</div>
+              <h3>SIMATIC AX</h3>
+              <p class="cert-sub">Industrial App Development</p>
+              <p class="cert-date">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                2024
+              </p>
+              <div class="cert-skills">
+                <span>SIMATIC AX IDE</span>
+                <span>OOP for PLC</span>
+                <span>ST Language</span>
+                <span>Industrial DevOps</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CERT 5 -->
+          <article class="cert-card glass-card reveal" data-category="ai network" data-title="WinCC Unified Essentials SCADA HMI">
+            <div class="cert-img-wrap cert-img-pdf">
+              <div class="cert-pdf-thumb blue">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+                <span>Training Certificate</span>
+              </div>
+              <div class="cert-overlay">
+                <span class="cert-view-btn no-link">WinCC Essentials</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-badge siemens">Siemens</div>
+              <h3>WinCC Unified Essentials</h3>
+              <p class="cert-sub">SCADA / HMI Development</p>
+              <p class="cert-date">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                2023
+              </p>
+              <div class="cert-skills">
+                <span>WinCC Unified</span>
+                <span>Scripting</span>
+                <span>Tag Management</span>
+                <span>Alarm System</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- CERT 6 -->
+          <article class="cert-card glass-card reveal" data-category="ai" data-title="Robotic Process Automation RPA UiPath">
+            <div class="cert-img-wrap cert-img-pdf">
+              <div class="cert-pdf-thumb teal">
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+                <span>Certification</span>
+              </div>
+              <div class="cert-overlay">
+                <span class="cert-view-btn no-link">RPA Cert</span>
+              </div>
+            </div>
+            <div class="cert-body">
+              <div class="cert-badge rpa">RPA</div>
+              <h3>Robotic Process Automation</h3>
+              <p class="cert-sub">UiPath / Power Automate</p>
+              <p class="cert-date">
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                2024
+              </p>
+              <div class="cert-skills">
+                <span>Workflow Automation</span>
+                <span>Bots</span>
+                <span>Process Mapping</span>
+                <span>IT-OT Integration</span>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <p class="no-results hidden" id="cert-no-results">No certificates match your search.</p>
+      </div>
+    </section>
+
+    <!-- ════════════════════════════════════════ EXPERIENCE ══ -->
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Career Journey</span>
+          <h2>Industrial <span class="accent">Experience</span></h2>
+        </div>
+        <div class="timeline">
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-connector"></div>
+            <div class="timeline-card glass-card">
+              <div class="tl-head">
+                <div>
+                  <span class="tl-company">Maple Auto Motion Pvt. Ltd.</span>
+                  <h3 class="tl-role">Service Engineer</h3>
+                </div>
+                <div class="tl-meta">
+                  <span class="tl-duration">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    Feb 2024 — Present
+                  </span>
+                  <span class="tl-location">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Bokaro Steel City
+                  </span>
+                </div>
+              </div>
+              <div class="tl-client">
+                <span class="label">Client:</span> Bokaro Steel Plant (SAIL)
+              </div>
+              <div class="tl-tech">
+                <span>S7-1500</span><span>SINAMICS S120/G120</span><span>TIA Portal V18</span><span>WinCC Unified</span><span>PROFINET</span>
+              </div>
+              <div class="tl-body">
+                <div class="tl-col">
+                  <h4>Responsibilities</h4>
+                  <ul>
+                    <li>Commissioning and field support for Siemens automation systems at one of India's largest steel plants</li>
+                    <li>PLC/HMI programming upgrades for rolling mill and crane drive systems</li>
+                    <li>SINAMICS S120 multi-axis commissioning for hot strip mill auxiliary drives</li>
+                    <li>Preventive maintenance schedule management for 12+ critical machines</li>
+                  </ul>
+                </div>
+                <div class="tl-col">
+                  <h4>Achievements</h4>
+                  <ul>
+                    <li>Successfully upgraded 6 legacy MASTERDRIVES to SINAMICS G120 with zero unplanned downtime</li>
+                    <li>Reduced average fault resolution time from 4 hours to 45 minutes through systematic diagnostics SOPs</li>
+                    <li>Developed custom HMI alarm management screen adopted plant-wide</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
           </div>
 
-          <ul class="meta-list">
-            <li><strong>Location:</strong> Dhanbad, Jharkhand</li>
-            <li><strong>Email:</strong> <a href="mailto:anil02573@gmail.com">anil02573@gmail.com</a></li>
-            <li><strong>Phone:</strong> <a href="tel:+919122407756">+91 91224 07756</a></li>
-            <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anil02573" target="_blank" rel="noopener noreferrer">anil02573</a></li>
-          </ul>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-connector"></div>
+            <div class="timeline-card glass-card">
+              <div class="tl-head">
+                <div>
+                  <span class="tl-company">Arka Automation</span>
+                  <h3 class="tl-role">Service &amp; Application Engineer</h3>
+                </div>
+                <div class="tl-meta">
+                  <span class="tl-duration">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    Feb 2022 — Feb 2024
+                  </span>
+                  <span class="tl-location">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Vadodara, Gujarat
+                  </span>
+                </div>
+              </div>
+              <div class="tl-client">
+                <span class="label">Clients:</span> CEAT Tyres · Sun Pharma · Biocon · Asian Paints
+              </div>
+              <div class="tl-tech">
+                <span>S7-1500/1200</span><span>WinCC Unified</span><span>Beckhoff IPC</span><span>G120C</span><span>PROFIBUS DP</span>
+              </div>
+              <div class="tl-body">
+                <div class="tl-col">
+                  <h4>Responsibilities</h4>
+                  <ul>
+                    <li>On-site commissioning and troubleshooting across pharma, tyre, and paint manufacturing</li>
+                    <li>Full SCADA development using WinCC Unified for batch production tracking</li>
+                    <li>SINAMICS G120C parameterization for conveyor, mixer, and extruder drives</li>
+                    <li>Beckhoff IPC integration for high-speed packaging line automation</li>
+                  </ul>
+                </div>
+                <div class="tl-col">
+                  <h4>Achievements</h4>
+                  <ul>
+                    <li>Delivered WinCC Unified SCADA for Sun Pharma batch reactor with 21 CFR Part 11 audit trail</li>
+                    <li>Reduced batch rejection rate by 18% through tighter PLC-based temperature control logic</li>
+                    <li>Integrated OPC UA data bridge between S7-1500 and ERP system (SAP PM)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass-card">
+              <div class="tl-head">
+                <div>
+                  <span class="tl-company">ZF Group</span>
+                  <h3 class="tl-role">Maintenance Technician</h3>
+                </div>
+                <div class="tl-meta">
+                  <span class="tl-duration">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+                    Feb 2021 — Feb 2022
+                  </span>
+                  <span class="tl-location">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                    Jamshedpur
+                  </span>
+                </div>
+              </div>
+              <div class="tl-client">
+                <span class="label">Domain:</span> Automotive — CNC &amp; Assembly Systems
+              </div>
+              <div class="tl-tech">
+                <span>SINUMERIK CNC</span><span>Siemens SIMOTICS</span><span>Pneumatics</span><span>PLC Maintenance</span>
+              </div>
+              <div class="tl-body">
+                <div class="tl-col">
+                  <h4>Responsibilities</h4>
+                  <ul>
+                    <li>Preventive and corrective maintenance for 20+ CNC and assembly machines</li>
+                    <li>Breakdown response and root-cause analysis for production stoppages</li>
+                    <li>Electrical panel maintenance, relay logic troubleshooting</li>
+                    <li>Power distribution and energy monitoring for the shop floor</li>
+                  </ul>
+                </div>
+                <div class="tl-col">
+                  <h4>Achievements</h4>
+                  <ul>
+                    <li>Achieved 98.5% machine availability on CNC turning cell through proactive maintenance</li>
+                    <li>Initiated spare parts reorder automation reducing stock-out incidents by 60%</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </section>
 
-    <!-- STATS -->
-    <section id="stats" class="section container" style="padding-top: 0;">
-      <div class="stats-grid">
-        <div class="stat-card reveal">
-          <div class="stat-number">15+</div><div class="stat-label">Projects Completed</div>
+    <!-- ════════════════════════════════════════ PROJECTS ══ -->
+    <section id="projects" class="section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Field Deployments</span>
+          <h2>Project <span class="accent">Portfolio</span></h2>
         </div>
-        <div class="stat-card reveal">
-          <div class="stat-number">40+</div><div class="stat-label">Machines Commissioned</div>
+
+        <!-- Project Search + Filter -->
+        <div class="filter-bar glass-card">
+          <div class="search-wrap">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="search" id="proj-search" placeholder="Search projects…" autocomplete="off" />
+          </div>
+          <div class="filter-chips" id="proj-filters">
+            <button class="chip active" data-filter="all">All</button>
+            <button class="chip" data-filter="cnc">CNC</button>
+            <button class="chip" data-filter="drives">Drives</button>
+            <button class="chip" data-filter="scada">SCADA</button>
+            <button class="chip" data-filter="plc">PLC</button>
+            <button class="chip" data-filter="steel">Steel</button>
+          </div>
         </div>
-        <div class="stat-card reveal">
-          <div class="stat-number">25+</div><div class="stat-label">PLC Programs Developed</div>
-        </div>
-        <div class="stat-card reveal">
-          <div class="stat-number">8</div><div class="stat-label">Certificates Earned</div>
-        </div>
-      </div>
-    </section>
 
-    <!-- SKILLS -->
-    <section id="skills" class="section container">
-      <h2>Top Skills</h2>
-      <div class="chips">
-        <span>PLC Programming</span>
-        <span>SCADA / HMI</span>
-        <span>Drives (SINAMICS)</span>
-        <span>SINUMERIK CNC</span>
-        <span>Robotic Process Automation (RPA)</span>
-        <span>IT‑OT Integration</span>
-      </div>
+        <div class="project-grid" id="proj-grid">
 
-      <div class="two-col">
-        <div>
-          <h3>Languages</h3>
-          <ul>
-            <li>Hindi — Professional working</li>
-            <li>English — Professional working</li>
-          </ul>
-        </div>
-        <div>
-          <h3>Certifications</h3>
-          <ul>
-            <li>SINAMICS S120 Basic & Advance</li>
-            <li>WinCC Unified Essentials</li>
-            <li>SINUMERIK 828D Commissioning & Maintenance</li>
-            <li>Robotic Process Automation</li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- CERTIFICATES -->
-    <section id="certificates" class="section light container">
-      <h2>Certificates</h2>
-      <p class="section-copy">Selected Siemens automation certificates and training records.</p>
-
-      <div class="certificate-grid">
-        <article class="certificate-card">
-          <a class="certificate-preview" href="images/certificates/SINUMERIK%20828D%20Commissioning%20%26%20Maintenance.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="images/certificates/SINUMERIK%20828D%20Commissioning%20%26%20Maintenance.jpg" alt="SINUMERIK 828D Commissioning and Maintenance certificate" loading="lazy" />
-          </a>
-          <h3>SINUMERIK 828D</h3>
-          <p>Commissioning and Maintenance</p>
-        </article>
-
-        <article class="certificate-card">
-          <a class="certificate-preview" href="images/certificates/SINAMICS%20S120%20Basic%20%26%20Advance.jpeg" target="_blank" rel="noopener noreferrer">
-            <img src="images/certificates/SINAMICS%20S120%20Basic%20%26%20Advance.jpeg" alt="SINAMICS S120 Basic and Advance certificate" loading="lazy" />
-          </a>
-          <h3>SINAMICS S120</h3>
-          <p>Basic and Advance</p>
-        </article>
-
-        <article class="certificate-card">
-          <a class="certificate-preview" href="images/certificates/SIMATIC%20S7-400%20with%20SIMATIC%20Manager%20(Advance%20Course).jpeg" target="_blank" rel="noopener noreferrer">
-            <img src="images/certificates/SIMATIC%20S7-400%20with%20SIMATIC%20Manager%20(Advance%20Course).jpeg" alt="SIMATIC S7-400 with SIMATIC Manager Advance Course certificate" loading="lazy" />
-          </a>
-          <h3>SIMATIC S7-400</h3>
-          <p>SIMATIC Manager Advance Course</p>
-        </article>
-
-        <article class="certificate-card">
-          <a class="certificate-preview" href="images/certificates/simatic%20ax%20.pdf" target="_blank" rel="noopener noreferrer">
-            <!-- Using a placeholder image as a thumbnail for the PDF -->
-            <img src="images/gallery/plceholder-round.png" alt="SIMATIC AX Certificate PDF" loading="lazy" />
-          </a>
-          <h3>SIMATIC AX</h3>
-          <p>Certificate PDF</p>
-          <a class="btn btn-outline" href="images/certificates/simatic%20ax%20.pdf" target="_blank" rel="noopener noreferrer">View PDF</a>
-        </article>
-      </div>
-      <div class="hero-cta" style="margin-top: 22px;">
-        <a class="btn btn-primary" href="certificates.html">Open Certificates Page</a>
-      </div>
-    </section>
-
-    <!-- PROJECTS -->
-    <section id="projects" class="section container">
-      <h2>Project Portfolio</h2>
-      <p class="section-copy">Showcasing major industrial automation commissions and machine builds.</p>
-
-      <div class="filter-controls">
-        <input type="text" class="search-input" placeholder="Search projects by machine name or technology..." />
-        <div class="filter-buttons">
-          <button class="filter-btn active" data-filter="all">All Projects</button>
-          <button class="filter-btn" data-filter="cnc">CNC & Machining</button>
-          <button class="filter-btn" data-filter="plc">PLC Programming</button>
-          <button class="filter-btn" data-filter="drives">Drive Systems</button>
-        </div>
-      </div>
-
-      <div class="project-grid">
-        <!-- Project 1 -->
-        <article class="project-card reveal" data-category="cnc plc drives" data-title="Vertical Lathe Machine Automation">
-          <img src="images/gallery/plceholder-round.png" alt="Vertical Lathe Machine" class="project-image" loading="lazy" />
-          <div class="project-content">
-            <h3>Vertical Lathe Machine Automation</h3>
-            <p class="muted"><strong>Overview:</strong> Complete automation retrofit for a heavy-duty vertical lathe machine.</p>
-            <p class="muted"><strong>Working Principle:</strong> Dual-axis synchronous movement for precise, large-scale metal turning operations.</p>
-            
-            <div class="project-tech-grid">
-              <div class="tech-item"><span>PLC</span><strong>Siemens S7-1200</strong></div>
-              <div class="tech-item"><span>Drive</span><strong>Siemens 6RA80 DC</strong></div>
-              <div class="tech-item"><span>HMI</span><strong>WinCC Basic</strong></div>
-              <div class="tech-item"><span>Sensors</span><strong>Encoders, Proximity</strong></div>
-              <div class="tech-item"><span>Protocol</span><strong>PROFINET</strong></div>
+          <!-- PROJECT 1 -->
+          <article class="project-card glass-card reveal" data-category="cnc drives plc" data-title="Vertical Lathe Machine Automation">
+            <div class="proj-header">
+              <div class="proj-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+              </div>
+              <div>
+                <h3>Vertical Lathe Machine Automation</h3>
+                <p class="proj-sub">Heavy Machinery Retrofit — Bokaro Steel</p>
+              </div>
+              <button class="proj-expand" aria-label="Expand project details">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
             </div>
 
-            <div class="exp-details">
-              <p><strong>Responsibilities:</strong> System commissioning, programming safety interlocks, and advanced speed control tuning.</p>
-              <p><strong>Challenges & Solutions:</strong> Synchronizing massive load inertia; solved by custom PID tuning in the 6RA80 drive.</p>
-              <p><strong>Results Achieved:</strong> Reduced cycle time by 10%, fully restored auto/manual operation, and improved machine safety standards.</p>
+            <div class="proj-tech-row">
+              <span class="tech-pill">S7-1200</span>
+              <span class="tech-pill">6RA80 DC Drive</span>
+              <span class="tech-pill">WinCC Basic</span>
+              <span class="tech-pill">PROFINET</span>
             </div>
 
-            <div class="cert-skills" style="padding: 16px 0 0;">
-              <span class="cert-skill-tag">Auto/Manual Mode</span>
-              <span class="cert-skill-tag">Alarm Handling</span>
-              <span class="cert-skill-tag">Speed Control</span>
+            <div class="proj-details">
+              <div class="spec-grid">
+                <div class="spec-row"><span class="spec-label">PLC</span><span class="spec-value">Siemens S7-1200 (CPU 1214C DC/DC/DC)</span></div>
+                <div class="spec-row"><span class="spec-label">Drive</span><span class="spec-value">Siemens 6RA80 DC Drive (200 kW)</span></div>
+                <div class="spec-row"><span class="spec-label">HMI</span><span class="spec-value">Siemens KTP900 Basic (WinCC Basic)</span></div>
+                <div class="spec-row"><span class="spec-label">Sensors</span><span class="spec-value">Proximity switches, encoder, thermal sensors</span></div>
+                <div class="spec-row"><span class="spec-label">Protocol</span><span class="spec-value">PROFINET IO</span></div>
+                <div class="spec-row"><span class="spec-label">Industry</span><span class="spec-value">Steel Manufacturing (SAIL)</span></div>
+              </div>
+
+              <div class="proj-section">
+                <h4>Project Overview</h4>
+                <p>Complete automation retrofit for a 15-ton vertical lathe machine used in heavy disc and ring machining at Bokaro Steel. Replaced aging relay-based controls with a modern PLC/drive system.</p>
+              </div>
+
+              <div class="proj-section">
+                <h4>Working Principle</h4>
+                <p>The S7-1200 PLC manages the entire sequence: workpiece clamping → spindle speed ramp-up via 6RA80 DC drive → auto-feed engagement → cutting cycle → tool retract → unclamp. The DC drive enables smooth torque control across the full speed range required for heavy turning operations.</p>
+              </div>
+
+              <div class="proj-two-col">
+                <div class="proj-section">
+                  <h4>My Responsibilities</h4>
+                  <ul>
+                    <li>Full PLC program development (LAD + SCL)</li>
+                    <li>6RA80 DC drive parameterization and speed loop tuning</li>
+                    <li>HMI screen design with real-time spindle RPM display</li>
+                    <li>Safety interlock programming per IEC 62061</li>
+                    <li>Site commissioning and operator training</li>
+                  </ul>
+                </div>
+                <div class="proj-section">
+                  <h4>Challenges &amp; Solutions</h4>
+                  <ul>
+                    <li><strong>Speed oscillation</strong> at low RPM → retuned current controller Kp/Ti</li>
+                    <li><strong>Encoder noise</strong> causing position faults → added hardware filter + PLC debounce</li>
+                    <li><strong>Legacy DC motor</strong> armature resistance mismatch → performed field weakening recalibration</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="proj-results">
+                <div class="result-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                  10% cycle time reduction
+                </div>
+                <div class="result-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  Zero safety incidents post-commissioning
+                </div>
+                <div class="result-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                  Auto mode uptime: 97.8%
+                </div>
+              </div>
             </div>
-          </div>
-        </article>
+          </article>
+
+          <!-- PROJECT 2 -->
+          <article class="project-card glass-card reveal" data-category="scada plc" data-title="Pharmaceutical Batch Reactor SCADA WinCC">
+            <div class="proj-header">
+              <div class="proj-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+              </div>
+              <div>
+                <h3>Pharma Batch Reactor SCADA</h3>
+                <p class="proj-sub">21 CFR Part 11 Compliant System — Sun Pharma</p>
+              </div>
+              <button class="proj-expand" aria-label="Expand project details">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+
+            <div class="proj-tech-row">
+              <span class="tech-pill">S7-1500</span>
+              <span class="tech-pill">WinCC Unified</span>
+              <span class="tech-pill">OPC UA</span>
+              <span class="tech-pill">PROFINET</span>
+            </div>
+
+            <div class="proj-details">
+              <div class="spec-grid">
+                <div class="spec-row"><span class="spec-label">PLC</span><span class="spec-value">Siemens S7-1515 (TIA Portal V18)</span></div>
+                <div class="spec-row"><span class="spec-label">SCADA</span><span class="spec-value">WinCC Unified PC Runtime V18</span></div>
+                <div class="spec-row"><span class="spec-label">Drive</span><span class="spec-value">SINAMICS G120C (agitator motor)</span></div>
+                <div class="spec-row"><span class="spec-label">Sensors</span><span class="spec-value">PT100 RTD, pressure transmitter, load cells, pH sensors</span></div>
+                <div class="spec-row"><span class="spec-label">Protocol</span><span class="spec-value">PROFINET + OPC UA to SAP PM</span></div>
+                <div class="spec-row"><span class="spec-label">Industry</span><span class="spec-value">Pharmaceuticals (GMP environment)</span></div>
+              </div>
+
+              <div class="proj-section">
+                <h4>Project Overview</h4>
+                <p>Design and deployment of a fully compliant SCADA system for multi-stage API batch reactors at Sun Pharma's Vadodara facility. System required full 21 CFR Part 11 audit trail, electronic batch records, and user role management.</p>
+              </div>
+
+              <div class="proj-two-col">
+                <div class="proj-section">
+                  <h4>My Responsibilities</h4>
+                  <ul>
+                    <li>WinCC Unified project development from scratch</li>
+                    <li>PLC batch sequencer (GRAFCET-style) in S7 GRAPH</li>
+                    <li>Audit trail and electronic signature implementation</li>
+                    <li>OPC UA server configuration for SAP PM bridge</li>
+                    <li>IQ/OQ/PQ documentation and validation support</li>
+                  </ul>
+                </div>
+                <div class="proj-section">
+                  <h4>Challenges &amp; Solutions</h4>
+                  <ul>
+                    <li><strong>Audit trail performance</strong> — optimized logging interval, moved to SQL Server for history</li>
+                    <li><strong>Multi-user concurrency</strong> — implemented client locking tokens in WinCC</li>
+                    <li><strong>Sensor drift</strong> — added auto-calibration reminder workflow in SCADA</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="proj-results">
+                <div class="result-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                  18% batch rejection reduction
+                </div>
+                <div class="result-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  FDA audit passed — zero observations
+                </div>
+                <div class="result-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                  Full SAP PM integration live
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 3 -->
+          <article class="project-card glass-card reveal" data-category="drives steel plc" data-title="Hot Strip Mill DC Drive Upgrade SAIL Steel">
+            <div class="proj-header">
+              <div class="proj-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><path d="M14.7 6.3a1 1 0 000 1.4l1.6 1.6a1 1 0 001.4 0l3-3a1 1 0 000-1.4l-1.6-1.6a1 1 0 00-1.4 0l-3 3zM5 20l10-10"/><path d="M13 13l-8 8"/></svg>
+              </div>
+              <div>
+                <h3>Hot Strip Mill Drive Upgrade</h3>
+                <p class="proj-sub">Legacy Drive Replacement — SAIL Bokaro</p>
+              </div>
+              <button class="proj-expand" aria-label="Expand project details">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+
+            <div class="proj-tech-row">
+              <span class="tech-pill">SINAMICS G120</span>
+              <span class="tech-pill">S7-1500</span>
+              <span class="tech-pill">PROFIBUS→PROFINET</span>
+              <span class="tech-pill">TIA Portal</span>
+            </div>
+
+            <div class="proj-details">
+              <div class="spec-grid">
+                <div class="spec-row"><span class="spec-label">Old Drive</span><span class="spec-value">Siemens MASTERDRIVES MC (6SE70)</span></div>
+                <div class="spec-row"><span class="spec-label">New Drive</span><span class="spec-value">SINAMICS G120 (6SL3 series, 75 kW × 6)</span></div>
+                <div class="spec-row"><span class="spec-label">PLC</span><span class="spec-value">Siemens S7-1516 F (Safety PLC)</span></div>
+                <div class="spec-row"><span class="spec-label">Protocol</span><span class="spec-value">PROFIBUS DP → PROFINET migration</span></div>
+                <div class="spec-row"><span class="spec-label">Scope</span><span class="spec-value">6 roll table drives + 2 roller drives</span></div>
+                <div class="spec-row"><span class="spec-label">Industry</span><span class="spec-value">Steel — Hot Rolling Mill</span></div>
+              </div>
+
+              <div class="proj-section">
+                <h4>Project Overview</h4>
+                <p>End-of-life replacement of 6× MASTERDRIVES with SINAMICS G120 drives for the hot strip mill roll table section. Project also included migration of communications from PROFIBUS DP to PROFINET and upgrade of the control PLC.</p>
+              </div>
+
+              <div class="proj-two-col">
+                <div class="proj-section">
+                  <h4>My Responsibilities</h4>
+                  <ul>
+                    <li>Drive sizing, selection, and hardware layout planning</li>
+                    <li>G120 parameterization via Startdrive (Speed + Torque mode)</li>
+                    <li>PROFIBUS-to-PROFINET migration with interim PN/PB Link</li>
+                    <li>Safety function (STO/SS1) wiring and F-parameter assignment</li>
+                    <li>Live production cutover with 8-hour planned shutdown window</li>
+                  </ul>
+                </div>
+                <div class="proj-section">
+                  <h4>Challenges &amp; Solutions</h4>
+                  <ul>
+                    <li><strong>8-hr cutover window</strong> — pre-built and tested all panels off-site, plug-and-play install</li>
+                    <li><strong>Torque matching</strong> — used inertia compensation tuning to match old drive behavior</li>
+                    <li><strong>Legacy encoder</strong> (HTL 5V) incompatibility → added SMC30 sensor module</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="proj-results">
+                <div class="result-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                  Zero unplanned downtime during upgrade
+                </div>
+                <div class="result-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  22% energy savings (IE3 motors + G120)
+                </div>
+                <div class="result-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                  MTBF improved 3× vs old drives
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- PROJECT 4 -->
+          <article class="project-card glass-card reveal" data-category="cnc plc" data-title="CNC Tyre Building Machine CEAT">
+            <div class="proj-header">
+              <div class="proj-icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="4"/><line x1="4.93" y1="4.93" x2="9.17" y2="9.17"/><line x1="14.83" y1="14.83" x2="19.07" y2="19.07"/><line x1="14.83" y1="9.17" x2="19.07" y2="4.93"/><line x1="4.93" y1="19.07" x2="9.17" y2="14.83"/></svg>
+              </div>
+              <div>
+                <h3>CNC Tyre Building Machine</h3>
+                <p class="proj-sub">Multi-Axis Servo Control — CEAT Tyres</p>
+              </div>
+              <button class="proj-expand" aria-label="Expand project details">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6 9 12 15 18 9"/></svg>
+              </button>
+            </div>
+
+            <div class="proj-tech-row">
+              <span class="tech-pill">S7-1200</span>
+              <span class="tech-pill">SINAMICS S120</span>
+              <span class="tech-pill">Servo Axis</span>
+              <span class="tech-pill">WinCC RT</span>
+            </div>
+
+            <div class="proj-details">
+              <div class="spec-grid">
+                <div class="spec-row"><span class="spec-label">PLC</span><span class="spec-value">Siemens S7-1214C (SIMATIC S7)</span></div>
+                <div class="spec-row"><span class="spec-label">Drive</span><span class="spec-value">SINAMICS S120 (3-axis servo)</span></div>
+                <div class="spec-row"><span class="spec-label">HMI</span><span class="spec-value">TP1200 Comfort (WinCC RT Advanced)</span></div>
+                <div class="spec-row"><span class="spec-label">Sensors</span><span class="spec-value">Linear encoders, pneumatic pressure sensors, laser distance</span></div>
+                <div class="spec-row"><span class="spec-label">Protocol</span><span class="spec-value">PROFINET with isochronous mode (IRT)</span></div>
+                <div class="spec-row"><span class="spec-label">Industry</span><span class="spec-value">Tyre Manufacturing</span></div>
+              </div>
+
+              <div class="proj-section">
+                <h4>Project Overview</h4>
+                <p>Commissioning of a 3-axis servo tyre building machine performing ply layup, belt application, and tread application sequences with ±0.1mm positional accuracy requirements for radial PCR tyre production.</p>
+              </div>
+
+              <div class="proj-two-col">
+                <div class="proj-section">
+                  <h4>My Responsibilities</h4>
+                  <ul>
+                    <li>SINAMICS S120 multi-axis commissioning via Startdrive</li>
+                    <li>Servo axis homing, position control tuning</li>
+                    <li>PLC motion library (PLCopen) implementation</li>
+                    <li>Recipe management for 12 tyre size variants</li>
+                    <li>Production data logging to CSV/OPC UA</li>
+                  </ul>
+                </div>
+                <div class="proj-section">
+                  <h4>Challenges &amp; Solutions</h4>
+                  <ul>
+                    <li><strong>Vibration at high speed</strong> → implemented notch filter for resonance frequency</li>
+                    <li><strong>Position overshoot</strong> → retuned velocity feedforward Kv factor</li>
+                    <li><strong>Recipe mismatch alarms</strong> → added barcode scanner cross-check in PLC logic</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="proj-results">
+                <div class="result-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg>
+                  ±0.1mm accuracy achieved
+                </div>
+                <div class="result-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+                  Cycle time: 68s → 52s
+                </div>
+                <div class="result-pill">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+                  Scrap reduced by 14%
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+        <p class="no-results hidden" id="proj-no-results">No projects match your search.</p>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
-    <section id="experience" class="section light container">
-      <h2>Experience</h2>
-
-      <div class="timeline">
-        <article class="timeline-item reveal">
-          <header>
-            <h3>Maple Auto Motion Pvt LTD</h3>
-            <time>Feb 2024 — Present</time>
-            <p class="muted">Service Engineer | Bokaro Steel City</p>
-          </header>
-          <div class="exp-details">
-            <p><strong>Client:</strong> Bokaro Steel (SAIL)</p>
-            <p><strong>Project:</strong> Plant-wide Drive Modernization</p>
-            <p><strong>Technologies:</strong> S7-1500, SINAMICS S120/G120, TIA Portal</p>
-            <p><strong>Responsibilities:</strong> Commissioning and support for Siemens automation. Executed PLC/HMI upgrades and heavy industry drives commissioning.</p>
-            <p><strong>Achievements:</strong> Successfully upgraded legacy drives, minimizing plant downtime during changeovers.</p>
+    <!-- ════════════════════════════════════════ CONTACT ══ -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow">Let's Connect</span>
+          <h2>Get in <span class="accent">Touch</span></h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-info glass-card reveal">
+            <p class="contact-intro">Open to new projects, consulting engagements, and technical collaborations in industrial automation.</p>
+            <div class="contact-links">
+              <a href="tel:+919122407756" class="contact-link">
+                <div class="contact-link-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.21 2 2 0 012.2 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.09a16 16 0 006 6l.56-.56a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92z"/></svg>
+                </div>
+                <div>
+                  <span class="contact-link-label">Phone</span>
+                  <span class="contact-link-value">+91 91224 07756</span>
+                </div>
+              </a>
+              <a href="mailto:anil02573@gmail.com" class="contact-link">
+                <div class="contact-link-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div>
+                  <span class="contact-link-label">Email</span>
+                  <span class="contact-link-value">anil02573@gmail.com</span>
+                </div>
+              </a>
+              <a href="https://www.linkedin.com/in/anil02573" target="_blank" rel="noopener" class="contact-link">
+                <div class="contact-link-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+                </div>
+                <div>
+                  <span class="contact-link-label">LinkedIn</span>
+                  <span class="contact-link-value">linkedin.com/in/anil02573</span>
+                </div>
+              </a>
+              <a href="https://github.com/mr-Anil-prajapati" target="_blank" rel="noopener" class="contact-link">
+                <div class="contact-link-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+                </div>
+                <div>
+                  <span class="contact-link-label">GitHub</span>
+                  <span class="contact-link-value">mr-Anil-prajapati</span>
+                </div>
+              </a>
+              <div class="contact-link no-hover">
+                <div class="contact-link-icon">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                </div>
+                <div>
+                  <span class="contact-link-label">Location</span>
+                  <span class="contact-link-value">Dhanbad, Jharkhand, India</span>
+                </div>
+              </div>
+            </div>
+            <a class="btn btn-primary" href="assets/resume.pdf" download style="margin-top:24px">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              Download CV
+            </a>
           </div>
-        </article>
 
-        <article class="timeline-item reveal">
-          <header>
-            <h3>Arka Automation</h3>
-            <time>Feb 2022 — Feb 2024</time>
-            <p class="muted">Service & Application Engineer | Vadodara, Gujarat</p>
-          </header>
-          <div class="exp-details">
-            <p><strong>Clients:</strong> Ceat, Sun Pharma, Biocon</p>
-            <p><strong>Project:</strong> Manufacturing Line SCADA & PLC Support</p>
-            <p><strong>Technologies:</strong> S7-1500/1200, WinCC Unified, Beckhoff IPCs</p>
-            <p><strong>Responsibilities:</strong> On-site troubleshooting, SCADA development, and drive parameterization across pharma and tyre manufacturing plants.</p>
-          </div>
-        </article>
-
-        <article class="timeline-item reveal">
-          <header>
-            <h3>ZF Group</h3>
-            <time>Feb 2021 — Feb 2022</time>
-            <p class="muted">Maintenance Technician | Jamshedpur</p>
-          </header>
-          <div class="exp-details">
-            <p><strong>Project:</strong> CNC Assembly Preventive Maintenance</p>
-            <p><strong>Technologies:</strong> CNC controls, Assembly systems</p>
-            <p><strong>Responsibilities:</strong> Preventive maintenance for CNC and assembly machines, breakdown response, and power management.</p>
-          </div>
-        </article>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="section container contact-section">
-      <h2>Contact</h2>
-      <div class="contact-grid">
-        <address class="contact-card">
-          <p><strong>Location:</strong> Dhanbad, Jharkhand, India</p>
-          <p><strong>Phone:</strong> <a href="tel:+919122407756">+91 91224 07756</a></p>
-          <p><strong>Email:</strong> <a href="mailto:anil02573@gmail.com">anil02573@gmail.com</a></p>
-          <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/anil02573" target="_blank" rel="noopener noreferrer">anil02573</a></p>
-          <p><strong>GitHub:</strong> <a href="https://github.com/mr-Anil-prajapati" target="_blank" rel="noopener noreferrer">mr-Anil-prajapati</a></p>
-          <a class="btn btn-outline" href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" download>Download CV</a>
-        </address>
-
-        <form class="contact-card" id="contact-form" onsubmit="return prepareMail(event)">
-          <label for="c-name">Name</label>
-          <input id="c-name" name="name" required />
-
-          <label for="c-email">Email</label>
-          <input id="c-email" name="email" type="email" required />
-
-          <label for="c-message">Message</label>
-          <textarea id="c-message" name="message" rows="5" required></textarea>
-
-          <div class="form-actions">
-            <button class="btn btn-primary" type="submit">Send</button>
-            <button class="btn" type="reset">Reset</button>
-          </div>
-        </form>
+          <form class="contact-form glass-card reveal" id="contact-form" onsubmit="return prepareMail(event)">
+            <h3>Send a Message</h3>
+            <div class="form-group">
+              <label for="c-name">Name</label>
+              <input id="c-name" name="name" placeholder="Your full name" required autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="c-email">Email</label>
+              <input id="c-email" name="email" type="email" placeholder="your@email.com" required autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="c-subject">Subject</label>
+              <input id="c-subject" name="subject" placeholder="Project inquiry / Consulting / Other" />
+            </div>
+            <div class="form-group">
+              <label for="c-message">Message</label>
+              <textarea id="c-message" name="message" rows="5" placeholder="Tell me about your project or requirement…" required></textarea>
+            </div>
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                Send Message
+              </button>
+              <button class="btn btn-ghost" type="reset">Clear</button>
+            </div>
+          </form>
+        </div>
       </div>
     </section>
 
@@ -296,9 +1028,22 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Anil Kumar • Industrial Automation Services</p>
+      <a class="brand" href="#top">
+        <span class="brand-bracket">[</span>AK<span class="brand-bracket">]</span>
+      </a>
+      <p>© 2026 Anil Kumar · Industrial Automation Engineer</p>
+      <div class="footer-links">
+        <a href="#profile">Profile</a>
+        <a href="#certificates">Certificates</a>
+        <a href="#projects">Projects</a>
+        <a href="assets/resume.pdf" download>CV</a>
+      </div>
     </div>
   </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
 
   <script src="js/main.js"></script>
 </body>
