@@ -3,14 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Anil Kumar — Certificates</title>
+  <title>Certificates — Anil Kumar</title>
 
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
-  <meta name="description" content="Certificates and training records for Anil Kumar." />
 
-  <link rel="icon" href="favicon.ico" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
@@ -28,7 +27,7 @@
         <ul>
           <li><a href="index.html#profile">Home</a></li>
           <li><a href="index.html#skills">Skills</a></li>
-          <li><a href="certificates.html">Certificates</a></li>
+          <li><a href="certificates.html" aria-current="page">Certificates</a></li>
           <li><a href="index.html#experience">Experience</a></li>
           <li><a href="index.html#contact">Contact</a></li>
         </ul>
@@ -37,59 +36,95 @@
   </header>
 
   <main id="main">
-    <section class="hero-outer">
-      <div class="hero-inner container">
-        <div class="hero-content">
-          <h1>Certificates</h1>
-          <p class="lead">A separate page for training records and certificate previews. The page is ready for additional image uploads if you want to add more certificates later.</p>
+    <section class="section container">
+      <h2>All Certificates</h2>
+      <p class="section-copy">A complete record of my Siemens automation certificates and training.</p>
+
+      <div class="filter-controls">
+        <input type="text" id="cert-search" class="search-input" placeholder="Search certificates by name or skill..." />
+        <div class="filter-buttons">
+          <button class="filter-btn active" data-filter="all">All Certificates</button>
+          <button class="filter-btn" data-filter="siemens">Siemens Automation</button>
+          <button class="filter-btn" data-filter="drives">Drives & Networking</button>
+          <button class="filter-btn" data-filter="cnc">CNC Systems</button>
+          <button class="filter-btn" data-filter="software">Software & AI</button>
         </div>
       </div>
-    </section>
 
-    <section class="section container">
-      <h2>Training Records</h2>
-      <div class="certificate-grid">
-        <article class="certificate-card">
+      <div class="certificate-grid" style="margin-top: 40px;">
+        
+        <!-- Certificate 1 (Image Example) -->
+        <article class="certificate-card" data-category="cnc siemens" data-title="SINUMERIK 828D">
           <a class="certificate-preview" href="images/certificates/SINUMERIK%20828D%20Commissioning%20%26%20Maintenance.jpg" target="_blank" rel="noopener noreferrer">
-            <img src="images/certificates/SINUMERIK%20828D%20Commissioning%20%26%20Maintenance.jpg" alt="SINUMERIK 828D Commissioning and Maintenance certificate" loading="lazy" />
+            <img src="images/certificates/SINUMERIK%20828D%20Commissioning%20%26%20Maintenance.jpg" alt="SINUMERIK 828D Commissioning and Maintenance" loading="lazy" />
           </a>
           <h3>SINUMERIK 828D</h3>
-          <p>Commissioning and Maintenance</p>
+          <div class="cert-meta">
+            <p><strong>Org:</strong> Siemens</p>
+            <p><strong>Date:</strong> Aug 2023</p>
+          </div>
+          <div class="cert-skills">
+            <span class="cert-skill-tag">CNC Maintenance</span>
+            <span class="cert-skill-tag">Commissioning</span>
+          </div>
         </article>
 
-        <article class="certificate-card">
+        <!-- Certificate 2 (Image Example) -->
+        <article class="certificate-card" data-category="drives siemens" data-title="SINAMICS S120">
           <a class="certificate-preview" href="images/certificates/SINAMICS%20S120%20Basic%20%26%20Advance.jpeg" target="_blank" rel="noopener noreferrer">
-            <img src="images/certificates/SINAMICS%20S120%20Basic%20%26%20Advance.jpeg" alt="SINAMICS S120 Basic and Advance certificate" loading="lazy" />
+            <img src="images/certificates/SINAMICS%20S120%20Basic%20%26%20Advance.jpeg" alt="SINAMICS S120 Basic and Advance" loading="lazy" />
           </a>
           <h3>SINAMICS S120</h3>
-          <p>Basic and Advance</p>
+          <div class="cert-meta">
+            <p><strong>Org:</strong> Siemens</p>
+            <p><strong>Date:</strong> Jun 2023</p>
+          </div>
+          <div class="cert-skills">
+            <span class="cert-skill-tag">Drive Tuning</span>
+            <span class="cert-skill-tag">Motion Control</span>
+          </div>
         </article>
 
-        <article class="certificate-card">
+        <!-- Certificate 3 (Image Example) -->
+        <article class="certificate-card" data-category="siemens" data-title="SIMATIC S7-400">
           <a class="certificate-preview" href="images/certificates/SIMATIC%20S7-400%20with%20SIMATIC%20Manager%20(Advance%20Course).jpeg" target="_blank" rel="noopener noreferrer">
-            <img src="images/certificates/SIMATIC%20S7-400%20with%20SIMATIC%20Manager%20(Advance%20Course).jpeg" alt="SIMATIC S7-400 with SIMATIC Manager Advance Course certificate" loading="lazy" />
+            <img src="images/certificates/SIMATIC%20S7-400%20with%20SIMATIC%20Manager%20(Advance%20Course).jpeg" alt="SIMATIC S7-400 with SIMATIC Manager" loading="lazy" />
           </a>
           <h3>SIMATIC S7-400</h3>
-          <p>SIMATIC Manager Advance Course</p>
+          <div class="cert-meta">
+            <p><strong>Org:</strong> Siemens</p>
+            <p><strong>Date:</strong> Jan 2023</p>
+          </div>
+          <div class="cert-skills">
+            <span class="cert-skill-tag">PLC Programming</span>
+            <span class="cert-skill-tag">SIMATIC Manager</span>
+          </div>
         </article>
 
-        <article class="certificate-card">
-          <div class="certificate-preview certificate-pdf">
-            <object data="images/certificates/simatic%20ax%20.pdf" type="application/pdf" aria-label="SIMATIC AX certificate PDF">
-              <a href="images/certificates/simatic%20ax%20.pdf" target="_blank" rel="noopener noreferrer">Open SIMATIC AX PDF</a>
-            </object>
-          </div>
+        <!-- Certificate 4 (PDF Example) -->
+        <article class="certificate-card" data-category="software siemens" data-title="SIMATIC AX">
+          <a class="certificate-preview" href="images/certificates/simatic%20ax%20.pdf" target="_blank" rel="noopener noreferrer">
+            <img src="images/gallery/plceholder-round.png" alt="SIMATIC AX PDF Thumbnail" loading="lazy" />
+          </a>
           <h3>SIMATIC AX</h3>
-          <p>Certificate PDF</p>
+          <div class="cert-meta">
+            <p><strong>Org:</strong> Siemens</p>
+            <p><strong>Date:</strong> Nov 2023</p>
+          </div>
+          <div class="cert-skills">
+            <span class="cert-skill-tag">IT/OT Integration</span>
+            <span class="cert-skill-tag">Automation</span>
+          </div>
           <a class="btn btn-outline" href="images/certificates/simatic%20ax%20.pdf" target="_blank" rel="noopener noreferrer">View PDF</a>
         </article>
+
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Anil Kumar • Certificates</p>
+      <p>© 2026 Anil Kumar • Industrial Automation Services</p>
     </div>
   </footer>
 

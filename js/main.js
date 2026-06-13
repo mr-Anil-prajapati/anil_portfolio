@@ -65,3 +65,36 @@ function prepareMail(e) {
   window.location.href = 'mailto:anil02573@gmail.com?subject=' + subject + '&body=' + body;
   return false;
 }
+
+// Certificate Filter and Search Logic
+document.addEventListener('DOMContentLoaded', function () {
+  const searchInput = document.getElementById('cert-search');
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const certCards = document.querySelectorAll('.certificate-card, .project-card');
+
+  function filterItems() {
+    const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
+    const activeFilter = document.querySelector('.filter-btn.active');
+    const category = activeFilter ? activeFilter.getAttribute('data-filter') : 'all';
+
+    certCards.forEach(card => {
+      const title = card.getAttribute('data-title') ? card.getAttribute('data-title').toLowerCase() : card.querySelector('h3').textContent.toLowerCase();
+      const cardCategory = card.getAttribute('data-category') || '';
+      
+      const matchesSearch = title.includes(searchTerm) || card.innerText.toLowerCase().includes(searchTerm);
+      const matchesCategory = category === 'all' || cardCategory.includes(category);
+
+      card.classList.toggle('hidden', !(matchesSearch && matchesCategory));
+    });
+  }
+
+  if (searchInput) searchInput.addEventListener('input', filterItems);
+  
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      filterItems();
+    });
+  });
+});

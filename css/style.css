@@ -601,3 +601,97 @@ img {
     scroll-behavior: auto !important;
   }
 }
+
+/* --- NEW MODERN GLASSMORPHISM & SECTIONS --- */
+
+/* Overrides for Dark Theme elements */
+.site-header { background: rgba(11, 17, 33, 0.88); border-bottom: 1px solid var(--line); }
+.nav a, .btn-outline { color: var(--text); }
+.btn-outline { background: transparent; border-color: var(--muted); }
+.btn-outline:hover { border-color: var(--primary); color: var(--primary); }
+.hamburger, .hamburger::before, .hamburger::after { background: var(--text); }
+.chips span { background: rgba(56, 189, 248, 0.1); border: 1px solid rgba(56, 189, 248, 0.2); color: var(--primary); }
+.hero-inner { background: var(--surface); }
+.section.light { background: transparent; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.hero-photo .photo { border-color: var(--line); }
+.nav { background: rgba(11, 17, 33, 0.98); border-bottom: 1px solid var(--line); }
+.nav-toggle { background: transparent; border-color: var(--line); }
+
+/* Glassmorphism Effect */
+.hero-inner, .two-col > div, .timeline-item, .certificate-card, .contact-card, .project-card, .stat-card {
+  background: var(--surface);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--line);
+}
+
+/* Stats Grid */
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  margin-top: 24px;
+}
+.stat-card {
+  padding: 32px 24px;
+  border-radius: var(--radius-md);
+  text-align: center;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.3s ease;
+}
+.stat-card:hover { transform: translateY(-5px); border-color: var(--primary); }
+.stat-number { font-size: 2.8rem; font-weight: 800; color: var(--primary); margin-bottom: 4px; line-height: 1; }
+.stat-label { color: var(--muted); font-weight: 600; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.05em; }
+
+/* Projects Grid */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 32px;
+}
+.project-card {
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.project-card p { font-size: 0.95rem; }
+.project-image {
+  width: 100%; height: 220px; object-fit: cover;
+  background: var(--surface-soft); border-bottom: 1px solid var(--line);
+}
+.project-content {
+  padding: 24px; display: flex; flex-direction: column; gap: 16px; flex-grow: 1;
+}
+.project-tech-grid {
+  display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  font-size: 0.85rem; background: rgba(0,0,0,0.25); padding: 16px; border-radius: var(--radius-sm); border: 1px solid var(--line);
+}
+.tech-item span { display: block; color: var(--muted); font-size: 0.75rem; text-transform: uppercase; margin-bottom: 2px; }
+.tech-item strong { color: var(--primary); font-weight: 600; }
+.exp-details p { font-size: 0.95rem; margin-top: 8px; }
+.exp-details strong { color: var(--primary); }
+
+/* Filters & Search */
+.filter-controls { display: flex; flex-direction: column; gap: 16px; margin: 32px 0 40px; }
+.search-input {
+  width: 100%; max-width: 400px; padding: 12px 20px;
+  border-radius: 99px; border: 1px solid var(--line);
+  background: var(--surface); color: var(--text); backdrop-filter: blur(12px);
+}
+.search-input:focus { outline: none; border-color: var(--primary); box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.15); }
+.filter-buttons { display: flex; flex-wrap: wrap; gap: 10px; }
+.filter-btn {
+  background: var(--surface-soft); border: 1px solid var(--line); color: var(--text);
+  padding: 8px 16px; border-radius: 99px; cursor: pointer; font-size: 0.85rem; font-weight: 600; transition: all 0.2s ease;
+}
+.filter-btn:hover, .filter-btn.active { background: var(--primary); color: #0b1121; border-color: var(--primary); }
+
+/* Certificate Details */
+.cert-meta { font-size: 0.85rem; color: var(--muted); margin-bottom: 12px; padding: 0 18px; }
+.cert-meta strong { color: var(--text); font-weight: 500; }
+.cert-skills { padding: 0 18px 18px; display: flex; flex-wrap: wrap; gap: 6px; }
+.cert-skill-tag { font-size: 0.75rem; background: rgba(56, 189, 248, 0.1); color: var(--primary); padding: 4px 8px; border-radius: 4px; border: 1px solid rgba(56, 189, 248, 0.2); }
+
+/* Utility */
+.hidden { display: none !important; }

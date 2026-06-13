@@ -69,6 +69,24 @@
       </div>
     </section>
 
+    <!-- STATS -->
+    <section id="stats" class="section container" style="padding-top: 0;">
+      <div class="stats-grid">
+        <div class="stat-card reveal">
+          <div class="stat-number">15+</div><div class="stat-label">Projects Completed</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-number">40+</div><div class="stat-label">Machines Commissioned</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-number">25+</div><div class="stat-label">PLC Programs Developed</div>
+        </div>
+        <div class="stat-card reveal">
+          <div class="stat-number">8</div><div class="stat-label">Certificates Earned</div>
+        </div>
+      </div>
+    </section>
+
     <!-- SKILLS -->
     <section id="skills" class="section container">
       <h2>Top Skills</h2>
@@ -132,11 +150,10 @@
         </article>
 
         <article class="certificate-card">
-          <div class="certificate-preview certificate-pdf">
-            <object data="images/certificates/simatic%20ax%20.pdf" type="application/pdf" aria-label="SIMATIC AX certificate PDF">
-              <a href="images/certificates/simatic%20ax%20.pdf" target="_blank" rel="noopener noreferrer">Open SIMATIC AX PDF</a>
-            </object>
-          </div>
+          <a class="certificate-preview" href="images/certificates/simatic%20ax%20.pdf" target="_blank" rel="noopener noreferrer">
+            <!-- Using a placeholder image as a thumbnail for the PDF -->
+            <img src="images/gallery/plceholder-round.png" alt="SIMATIC AX Certificate PDF" loading="lazy" />
+          </a>
           <h3>SIMATIC AX</h3>
           <p>Certificate PDF</p>
           <a class="btn btn-outline" href="images/certificates/simatic%20ax%20.pdf" target="_blank" rel="noopener noreferrer">View PDF</a>
@@ -147,36 +164,83 @@
       </div>
     </section>
 
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <h2>Project Portfolio</h2>
+      <p class="section-copy">Showcasing major industrial automation commissions and machine builds.</p>
+
+      <div class="project-grid">
+        <!-- Project 1 -->
+        <article class="project-card reveal" data-category="cnc">
+          <div class="project-content">
+            <h3>Vertical Lathe Machine Automation</h3>
+            <p class="muted">Complete automation retrofit for a heavy-duty vertical lathe machine.</p>
+            
+            <div class="project-tech-grid">
+              <div class="tech-item"><span>PLC</span><strong>Siemens S7-1200</strong></div>
+              <div class="tech-item"><span>Drive</span><strong>Siemens 6RA80 DC</strong></div>
+              <div class="tech-item"><span>HMI</span><strong>WinCC Basic</strong></div>
+              <div class="tech-item"><span>Protocol</span><strong>PROFINET</strong></div>
+            </div>
+
+            <div class="exp-details">
+              <p><strong>Responsibilities:</strong> Commissioning, programming safety interlocks, and speed control tuning.</p>
+              <p><strong>Features:</strong> Auto/Manual mode, alarm handling, dual-axis sync.</p>
+              <p><strong>Results:</strong> Reduced cycle time by 10% and improved machine safety standards.</p>
+            </div>
+
+            <div class="cert-skills" style="padding: 16px 0 0;">
+              <span class="cert-skill-tag">Troubleshooting</span>
+              <span class="cert-skill-tag">Commissioning</span>
+              <span class="cert-skill-tag">Speed Control</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
     <!-- EXPERIENCE -->
     <section id="experience" class="section light container">
       <h2>Experience</h2>
 
       <div class="timeline">
-        <article class="timeline-item">
+        <article class="timeline-item reveal">
           <header>
             <h3>Maple Auto Motion Pvt LTD — Service Engineer</h3>
             <time>Feb 2024 — Present</time>
             <p class="muted">Bokaro Steel City</p>
           </header>
-          <p>Commissioning and support for Siemens automation at Bokaro Steel (SAIL). Responsibilities include PLC/HMI upgrades, VFD commissioning (S120/G120), and drives commissioning for heavy industry applications.</p>
+          <div class="exp-details">
+            <p><strong>Client:</strong> Bokaro Steel (SAIL)</p>
+            <p><strong>Technologies:</strong> S7-1500, SINAMICS S120/G120, TIA Portal</p>
+            <p><strong>Responsibilities:</strong> Commissioning and support for Siemens automation. Executed PLC/HMI upgrades and heavy industry drives commissioning.</p>
+            <p><strong>Achievements:</strong> Successfully upgraded legacy drives, minimizing plant downtime during changeovers.</p>
+          </div>
         </article>
 
-        <article class="timeline-item">
+        <article class="timeline-item reveal">
           <header>
             <h3>Arka Automation — Service & Application Engineer</h3>
             <time>Feb 2022 — Feb 2024</time>
             <p class="muted">Vadodara, Gujarat</p>
           </header>
-          <p>On-site troubleshooting and programming for major clients including Ceat, Sun Pharma, and Biocon. Worked with S7-1500/1200, WinCC, Beckhoff IPCs, and multiple drive systems.</p>
+          <div class="exp-details">
+            <p><strong>Clients:</strong> Ceat, Sun Pharma, Biocon</p>
+            <p><strong>Technologies:</strong> S7-1500/1200, WinCC Unified, Beckhoff IPCs</p>
+            <p><strong>Responsibilities:</strong> On-site troubleshooting, SCADA development, and drive parameterization across pharma and tyre manufacturing plants.</p>
+          </div>
         </article>
 
-        <article class="timeline-item">
+        <article class="timeline-item reveal">
           <header>
             <h3>ZF Group — Maintenance Technician</h3>
             <time>Feb 2021 — Feb 2022</time>
             <p class="muted">Jamshedpur</p>
           </header>
-          <p>Preventive maintenance for CNC and assembly machines, breakdown response, PLC basics, and utility/power management.</p>
+          <div class="exp-details">
+            <p><strong>Technologies:</strong> CNC controls, Assembly systems</p>
+            <p><strong>Responsibilities:</strong> Preventive maintenance for CNC and assembly machines, breakdown response, and power management.</p>
+          </div>
         </article>
       </div>
     </section>
