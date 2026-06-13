@@ -664,7 +664,7 @@ img {
   padding: 24px; display: flex; flex-direction: column; gap: 16px; flex-grow: 1;
 }
 .project-tech-grid {
-  display: grid; grid-template-columns: 1fr 1fr; gap: 12px;
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 12px;
   font-size: 0.85rem; background: rgba(0,0,0,0.25); padding: 16px; border-radius: var(--radius-sm); border: 1px solid var(--line);
 }
 .tech-item span { display: block; color: var(--muted); font-size: 0.75rem; text-transform: uppercase; margin-bottom: 2px; }

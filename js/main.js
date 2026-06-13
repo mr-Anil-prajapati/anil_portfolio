@@ -51,6 +51,36 @@ document.addEventListener('DOMContentLoaded', function () {
       item.classList.add('reveal');
       observer.observe(item);
     });
+
+    // Dynamic Counter Animation for Stats
+    const statNumbers = document.querySelectorAll('.stat-number');
+    const statsObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const target = entry.target;
+          const finalText = target.innerText;
+          const finalNum = parseInt(finalText.replace(/\D/g, ''));
+          const suffix = finalText.replace(/[0-9]/g, '');
+          
+          let count = 0;
+          const duration = 1500; // Animation lasts 1.5 seconds
+          const increment = finalNum / (duration / 16);
+          
+          const timer = setInterval(() => {
+            count += increment;
+            if (count >= finalNum) {
+              target.innerText = finalNum + suffix;
+              clearInterval(timer);
+            } else {
+              target.innerText = Math.floor(count) + suffix;
+            }
+          }, 16);
+          statsObserver.unobserve(target);
+        }
+      });
+    }, { threshold: 0.5 });
+
+    statNumbers.forEach(num => statsObserver.observe(num));
   }
 });
 
@@ -68,16 +98,16 @@ function prepareMail(e) {
 
 // Certificate Filter and Search Logic
 document.addEventListener('DOMContentLoaded', function () {
-  const searchInput = document.getElementById('cert-search');
+  const searchInput = document.querySelector('.search-input');
   const filterBtns = document.querySelectorAll('.filter-btn');
-  const certCards = document.querySelectorAll('.certificate-card, .project-card');
+  const itemCards = document.querySelectorAll('.certificate-card, .project-card');
 
   function filterItems() {
     const searchTerm = searchInput ? searchInput.value.toLowerCase() : '';
     const activeFilter = document.querySelector('.filter-btn.active');
     const category = activeFilter ? activeFilter.getAttribute('data-filter') : 'all';
 
-    certCards.forEach(card => {
+    itemCards.forEach(card => {
       const title = card.getAttribute('data-title') ? card.getAttribute('data-title').toLowerCase() : card.querySelector('h3').textContent.toLowerCase();
       const cardCategory = card.getAttribute('data-category') || '';
       
@@ -92,7 +122,8 @@ document.addEventListener('DOMContentLoaded', function () {
   
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
+      const container = btn.closest('.filter-buttons');
+      if(container) container.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
       btn.classList.add('active');
       filterItems();
     });
